@@ -1,0 +1,9 @@
+- name: primevalforest
+  clips:
+  - ForestCrypt
+  volume: 0.25
+  fadeInTime: 10
+  alwaysFadeOut: true
+  ambientMusic: true
+  loop: true
+  resume: true

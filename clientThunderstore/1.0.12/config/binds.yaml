@@ -1,0 +1,152 @@
+- key: ''
+  command: ''
+- key: q
+  modifiers: build
+  command: tag=change_shape hammer_shape
+- key: wheel
+  modifiers: leftshift,build
+  command: tag=build_scaling_mouse_wheel hammer_zoom 5%
+- key: wheel
+  modifiers: leftshift,build
+  command: tag=command_radius_mouse_wheel hammer_zoom_x_cmd 1
+- key: wheel
+  modifiers: leftshift,leftalt,build
+  command: tag=command_depth_mouse_wheel hammer_zoom_z_cmd 1
+- key: wheel
+  modifiers: leftshift,leftcontrol,build
+  command: tag=command_height_mouse_wheel hammer_zoom_y_cmd 0.5
+- key: pageup
+  modifiers: build
+  command: tag=move_up hammer_move_up 0.1
+- key: pageup
+  modifiers: leftalt,build
+  command: tag=move_up_large hammer_move_up 1
+- key: pagedown
+  modifiers: build
+  command: tag=move_down hammer_move_down 0.1
+- key: pagedown
+  modifiers: leftalt,build
+  command: tag=move_down_large hammer_move_down 1
+- key: leftarrow
+  modifiers: build
+  command: tag=move_left hammer_move_left 0.1
+- key: leftarrow
+  modifiers: leftalt,build
+  command: tag=move_left_large hammer_move_left 1
+- key: rightarrow
+  modifiers: build
+  command: tag=move_right hammer_move_right 0.1
+- key: rightarrow
+  modifiers: leftalt,build
+  command: tag=move_right_large hammer_move_right 1
+- key: uparrow
+  modifiers: build
+  command: tag=move_forward hammer_move_forward 0.1
+- key: uparrow
+  modifiers: leftalt,build
+  command: tag=move_forward_large hammer_move_forward 1
+- key: downarrow
+  modifiers: build
+  command: tag=move_backward hammer_move_backward 0.1
+- key: downarrow
+  modifiers: leftalt,build
+  command: tag=move_backward_large hammer_move_backward 1
+- key: keypad0
+  modifiers: build
+  command: tag=freeze_selection hammer_freeze
+- key: keypad5
+  command: tag=select hammer
+- key: keypad5
+  modifiers: leftcontrol
+  command: tag=select_frozen hammer freeze
+- key: keypad5
+  modifiers: leftalt
+  command: tag=pick hammer pick
+- key: keypad5
+  modifiers: leftcontrol,leftalt
+  command: tag=pick_frozen hammer pick freeze
+- key: keypad7
+  command: tag=undo undo
+- key: keypad9
+  command: tag=redo redo
+- key: q
+  modifiers: command
+  command: _bind_change_shape
+- key: wheel
+  modifiers: command
+  command: _bind_command_radius_mouse_wheel
+- key: wheel
+  modifiers: leftshift,leftalt,command
+  command: _bind_command_depth_mouse_wheel
+- key: wheel
+  modifiers: leftshift,command
+  command: _bind_command_height_mouse_wheel
+- key: wheel
+  modifiers: leftshift,leftcontrol,command
+  command: _bind_command_rotation_mouse_wheel
+- key: wheel
+  modifiers: leftshift,build
+  command: _bind_build_scaling_mouse_wheel
+- key: wheel
+  modifiers: unbound,build
+  command: _bind_zooping_forward_mouse_wheel
+- key: wheel
+  modifiers: unbound,build
+  command: _bind_zooping_horizontal_mouse_wheel
+- key: wheel
+  modifiers: unbound,build
+  command: _bind_zooping_vertical_mouse_wheel
+- key: pageup
+  modifiers: build
+  command: _bind_move_up
+- key: pageup
+  modifiers: leftalt,build
+  command: _bind_move_up_large
+- key: pagedown
+  modifiers: build
+  command: _bind_move_down
+- key: pagedown
+  modifiers: leftalt,build
+  command: _bind_move_down_large
+- key: leftarrow
+  modifiers: build
+  command: _bind_move_left
+- key: leftarrow
+  modifiers: leftalt,build
+  command: _bind_move_left_large
+- key: rightarrow
+  modifiers: build
+  command: _bind_move_right
+- key: rightarrow
+  modifiers: leftalt,build
+  command: _bind_move_right_large
+- key: uparrow
+  modifiers: build
+  command: _bind_move_forward
+- key: uparrow
+  modifiers: leftalt,build
+  command: _bind_move_forward_large
+- key: downarrow
+  modifiers: build
+  command: _bind_move_backward
+- key: downarrow
+  modifiers: leftalt,build
+  command: _bind_move_backward_large
+- key: keypad0
+  modifiers: build
+  command: _bind_freeze_selection
+- key: keypad5
+  command: _bind_select
+- key: keypad5
+  modifiers: leftcontrol
+  command: _bind_select_frozen
+- key: keypad5
+  modifiers: leftalt
+  command: _bind_pick
+- key: keypad5
+  modifiers: leftcontrol,leftalt
+  command: _bind_pick_frozen
+- key: keypad7
+  command: _bind_undo
+- key: keypad9
+  command: _bind_redo

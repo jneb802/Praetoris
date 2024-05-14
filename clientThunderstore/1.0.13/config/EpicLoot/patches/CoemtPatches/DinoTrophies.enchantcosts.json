@@ -1,0 +1,28 @@
+{
+  "TargetFile": "enchantcosts.json", 
+  "Author": "Warpalicious",
+  "RequireAll": true, 
+  "Patches": [
+	{
+		"Path": "$.DisenchantProducts",
+		"Action": "AppendAll", 
+		"Value": [
+        {
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$TrophyDilo_coe" ],
+			"Products" : [ { "Item": "ShardMagic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$TrophyDilo_coe", "$TrophyRaptor_coe" ],
+			"Products" : [ { "Item": "ShardRare", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$TrophyTera_coe" ],
+			"Products" : [ { "Item": "ShardEpic", "Amount": 1 } ]
+		}
+	  ]
+	}
+  ]
+}

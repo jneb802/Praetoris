@@ -1,0 +1,154 @@
+#################################################
+# Shrine of Challenge WaveStyles Configuration
+#################################################
+# WaveStyles configurations have a number of key values
+# Easy:                      |- This is the key used to lookup this wave definition
+#  WaveConfig                |- The wave configuration for each segment of the wave
+#   - type: COMMON           |- This is the catagory of creature that will be selected
+#     percent: 30            |- This is the percentage of the waves total point pool that will be used for this spawn
+waveFormats:
+  Tutorial:
+    waveFormats:
+    - spawnType: common
+      spawnPercentage: 30
+    - spawnType: common
+      spawnPercentage: 30
+  Starter:
+    waveFormats:
+    - spawnType: common
+      spawnPercentage: 25
+    - spawnType: common
+      spawnPercentage: 25
+    - spawnType: common
+      spawnPercentage: 15
+  Easy:
+    waveFormats:
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: common
+      spawnPercentage: 25
+    - spawnType: common
+      spawnPercentage: 30
+  Normal:
+    waveFormats:
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: rare
+      spawnPercentage: 10
+    - spawnType: common
+      spawnPercentage: 30
+    - spawnType: common
+      spawnPercentage: 20
+  Hard:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 5
+    - spawnType: rare
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 30
+  VeryHard:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 10
+    - spawnType: rare
+      spawnPercentage: 25
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 30
+  Expert:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 10
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 30
+  Extreme:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 15
+    - spawnType: rare
+      spawnPercentage: 20
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 25
+  Dynamic:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 15
+    - spawnType: rare
+      spawnPercentage: 25
+    - spawnType: rare
+      spawnPercentage: 15
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 25
+  ElitesOnly:
+    waveFormats:
+    - spawnType: elite
+      spawnPercentage: 25
+    - spawnType: elite
+      spawnPercentage: 25
+    - spawnType: elite
+      spawnPercentage: 25
+  RaresOnly:
+    waveFormats:
+    - spawnType: rare
+      spawnPercentage: 25
+    - spawnType: rare
+      spawnPercentage: 25
+    - spawnType: rare
+      spawnPercentage: 25
+  TutorialBoss:
+    waveFormats:
+    - spawnType: unique
+      spawnPercentage: 100
+    - spawnType: common
+      spawnPercentage: 30
+    - spawnType: common
+      spawnPercentage: 40
+  EasyBoss:
+    waveFormats:
+    - spawnType: unique
+      spawnPercentage: 100
+    - spawnType: rare
+      spawnPercentage: 30
+    - spawnType: common
+      spawnPercentage: 30
+  Boss:
+    waveFormats:
+    - spawnType: unique
+      spawnPercentage: 100
+    - spawnType: elite
+      spawnPercentage: 20
+    - spawnType: rare
+      spawnPercentage: 30
+    - spawnType: common
+      spawnPercentage: 25
+  DynamicBoss:
+    waveFormats:
+    - spawnType: unique
+      spawnPercentage: 100
+    - spawnType: elite
+      spawnPercentage: 20
+    - spawnType: rare
+      spawnPercentage: 20
+    - spawnType: rare
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 20
+    - spawnType: common
+      spawnPercentage: 20
+

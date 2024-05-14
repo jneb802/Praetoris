@@ -1,0 +1,26 @@
+- biome: PrimevalForest
+  name: Primeval Forest
+  terrain: blackforest
+  altitudeDelta: 1.15
+  altitudeMultiplier: 1.15
+  environments:
+  - environment: PrimeClear
+    weight: 1.6
+  - environment: PrimeDark
+    weight: 1.1
+  - environment: PrimeStorm
+    weight: 0.4
+  - environment: PrimeRain
+    weight: 0.5
+  color:
+    r: 0.3
+    g: 0.4
+    b: 0.933
+    a: 0.952
+  mapColor:
+    r: 0.42
+    g: 0.455
+    b: 0.517
+    a: 1
+  musicDay: primevalforest
+  musicNight: primevalforest

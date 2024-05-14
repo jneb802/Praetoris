@@ -1,0 +1,902 @@
+###################################################################################################################################################
+# Wild Shrine Configuration
+###################################################################################################################################################
+# wildShrines:
+# - definitionForWildShrine: VF_wild_shrine_green1                    |- The prefab that this set of configuration will be applied to
+#   wildShrineNameLocalization: $wild_shrine_green                    |- The localization for the prefabs name (when hovered over) this uses a lookup value but defaults to its literal value
+#   wildShrineRequestLocalization: $wild_shrine_green_request         |- What the shrine says when you interact with it
+#   shrineUnacceptedTributeLocalization: $wild_shrine_not_interested  |- What the shrine says when you offer an incorrect tribute
+#   shrineLargerTributeRequiredLocalization: $wild_shrine_hungry      |- What the shrine says when you do not offer enough tribute
+#   wildShrineLevelsConfig:                                           |- Level configurations related to this shrine
+#   - tributeName: TrophyBoar                                         |- The prefab name of the tribute required to activate this level
+#     tributeAmount: 4                                                |- Amount of the tribute required to activate this level
+#     rewards:                                                        |- Rewards for this level in the format of Prefab: cost eg: RawMeat: 14.
+#       LeatherScraps: 14
+#       RawMeat: 12
+#     hardMode: false                                                 |- If hardmode should be enabled for this level (doubles the spawn point pool and gives 50% more rewards)
+#     siegeMode: false                                                |- If siege mode should be enabled for this level (double the number of waves 4->8 and gives 50% more rewards)
+#     wildshrineWaveStartLocalization: $wild_boars_attack             |- Localization text to display when this wave starts
+#     wildshrineWaveEndLocalization: $wild_boars_defeated             |- Localization text to display when this wave is finished
+#     wildLevelDefinition:
+#       levelIndex: 2                                                 |- The difficulty level for this wave, valid values are 1+ (Refer to the readme for a breakdown of this equation)
+#       biome: Meadows                                                |- The biome this wave is for, this impacts creature selection
+#       waveFormat: Tutorial                                          |- The wavestyle this uses (from wavestyles.yml), this governs which catagories and the percentage makeup of the wave
+#       levelWarningLocalization: $meadows_warning_wilderness         |- Localization for a between phase warning (often not used)
+#       maxCreaturesPerPhaseOverride: 15                              |- Overrides the max creatures per wave to be this value (overrides the global config)
+#       onlySelectMonsters:                                           |- Set of monsters that can be selected (From monsters.yml)
+#       - Boar
+#       - Greyling
+#       excludeSelectMonsters:                                        |- Set of monsters that can't be selected (from monsters.yml) best used when OnlySelected is not set.
+#       commonSpawnModifiers:                                         |- Spawn modifiers for common creatures
+#         linearIncreaseRandomWaveAdjustment: true
+#       rareSpawnModifiers:                                           |- Spawn modifiers for rare creatures
+#       eliteSpawnModifiers:                                          |- Spawn modifiers for elite creatures
+
+wildShrines:
+- definitionForWildShrine: VF_wild_shrine_green1
+  wildShrineNameLocalization: $wild_shrine_green
+  wildShrineRequestLocalization: $wild_shrine_green_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyBoar
+    tributeAmount: 4
+    rewards:
+      LeatherScraps: 14
+      RawMeat: 12
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_boars_attack
+    wildshrineWaveEndLocalization: $wild_boars_defeated
+    wildLevelDefinition:
+      levelIndex: 2
+      biome: Meadows
+      waveFormat: Tutorial
+      levelWarningLocalization: $meadows_warning_wilderness
+      maxCreaturesPerPhaseOverride: 15
+      onlySelectMonsters:
+      - Boar
+      - Greyling
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers: 
+      eliteSpawnModifiers: 
+  - tributeName: TrophyDeer
+    tributeAmount: 3
+    rewards:
+      DeerHide: 16
+      DeerMeat: 14
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_deer_attack
+    wildshrineWaveEndLocalization: $wild_deer_defeated
+    wildLevelDefinition:
+      levelIndex: 1
+      biome: Meadows
+      waveFormat: Tutorial
+      levelWarningLocalization: $meadows_warning_wilderness
+      maxCreaturesPerPhaseOverride: 12
+      onlySelectMonsters:
+      - Greyling
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers: 
+      eliteSpawnModifiers: 
+  - tributeName: TrophyNeck
+    tributeAmount: 2
+    rewards:
+      Resin: 14
+      NeckTail: 10
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_neck_attack
+    wildshrineWaveEndLocalization: $wild_neck_defeated
+    wildLevelDefinition:
+      levelIndex: 1
+      biome: Meadows
+      waveFormat: Tutorial
+      levelWarningLocalization: $meadows_warning_wilderness
+      maxCreaturesPerPhaseOverride: 12
+      onlySelectMonsters:
+      - Neck
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers: 
+      eliteSpawnModifiers: 
+- definitionForWildShrine: VF_wild_shrine_blue1
+  wildShrineNameLocalization: $wild_shrine_blackforest
+  wildShrineRequestLocalization: $wild_shrine_blackforest_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyGreydwarf
+    tributeAmount: 5
+    rewards:
+      Wood: 14
+      Resin: 18
+      GreydwarfEye: 16
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_greydwarfs_attack
+    wildshrineWaveEndLocalization: $wild_greydwarfs_defeated
+    wildLevelDefinition:
+      levelIndex: 3
+      biome: BlackForest
+      waveFormat: Starter
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - GreyDwarf
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers: 
+      eliteSpawnModifiers: 
+  - tributeName: TrophyGreydwarfBrute
+    tributeAmount: 2
+    rewards:
+      RoundLog: 16
+      Flint: 14
+      GreydwarfEye: 18
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_greydwarfs_attack
+    wildshrineWaveEndLocalization: $wild_greydwarfs_defeated
+    wildLevelDefinition:
+      levelIndex: 3
+      biome: BlackForest
+      waveFormat: Easy
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - GreyDwarf
+      - GreyDwarfBrute
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers: 
+  - tributeName: TrophyGreydwarfShaman
+    tributeAmount: 2
+    rewards:
+      GreydwarfEye: 16
+      Mushroom: 14
+      CarrotSeeds: 30
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_greydwarfs_attack
+    wildshrineWaveEndLocalization: $wild_greydwarfs_defeated
+    wildLevelDefinition:
+      levelIndex: 3
+      biome: BlackForest
+      waveFormat: Easy
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - GreyDwarf
+      - GreyDwarfShaman
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers: 
+  - tributeName: TrophyForestTroll
+    tributeAmount: 4
+    rewards:
+      Amber: 22
+      Coins: 14
+      TinOre: 50
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_trolls_attack
+    wildshrineWaveEndLocalization: $wild_trolls_defeated
+    wildLevelDefinition:
+      levelIndex: 3
+      biome: BlackForest
+      waveFormat: Easy
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - GreyDwarf
+      - Troll
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers: 
+  - tributeName: TrophySkeleton
+    tributeAmount: 4
+    rewards:
+      BoneFragments: 16
+      MushroomYellow: 14
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_skeleton_attack
+    wildshrineWaveEndLocalization: $wild_skeleton_defeated
+    wildLevelDefinition:
+      levelIndex: 4
+      biome: BlackForest
+      waveFormat: Starter
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Skeleton
+      - SkeletonArcher
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers: 
+  - tributeName: TrophySkeletonPoison
+    tributeAmount: 1
+    rewards:
+      BoneFragments: 16
+      Thistle: 14
+      CopperOre: 50
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_skeleton_attack
+    wildshrineWaveEndLocalization: $wild_skeleton_defeated
+    wildLevelDefinition:
+      levelIndex: 3
+      biome: BlackForest
+      waveFormat: Easy
+      levelWarningLocalization: $blackforest_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Skeleton
+      - SkeletonArcher
+      - RancidSkeleton
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers: 
+- definitionForWildShrine: VF_wild_shrine_green2
+  wildShrineNameLocalization: $wild_shrine_swamp
+  wildShrineRequestLocalization: $wild_shrine_swamp_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyLeech
+    tributeAmount: 5
+    rewards:
+      Guck: 30
+      Bloodbag: 18
+      Entrails: 16
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 7
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - DraugrArcher
+      - Leech
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyDraugr
+    tributeAmount: 3
+    rewards:
+      ElderBark: 18
+      Entrails: 18
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 5
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - DraugrArcher
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyDraugrElite
+    tributeAmount: 3
+    rewards:
+      AmberPearl: 18
+      IronScrap: 60
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 8
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - DraugrArcher
+      - DraugrElite
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyWraith
+    tributeAmount: 1
+    rewards:
+      Chain: 20
+      Thistle: 40
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 8
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - Wraith
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyAbomination
+    tributeAmount: 4
+    rewards:
+      Guck: 20
+      Root: 18
+      TurnipSeeds: 50
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 7
+      biome: Swamp
+      waveFormat: Hard
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - DraugrElite
+      - Abomination
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyBlob
+    tributeAmount: 4
+    rewards:
+      Ooze: 20
+      Ruby: 40
+      Bloodbag: 40
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_undead_attack
+    wildshrineWaveEndLocalization: $wild_undead_defeated
+    wildLevelDefinition:
+      levelIndex: 8
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Blob
+      - BlobElite
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophySurtling
+    tributeAmount: 1
+    rewards:
+      SurtlingCore: 20
+      Coal: 40
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_surtling_attack
+    wildshrineWaveEndLocalization: $wild_surtling_defeated
+    wildLevelDefinition:
+      levelIndex: 6
+      biome: Swamp
+      waveFormat: Normal
+      levelWarningLocalization: $swamp_warning_wilderness
+      maxCreaturesPerPhaseOverride: 20
+      onlySelectMonsters:
+      - Draugr
+      - Surtling
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+- definitionForWildShrine: VF_wild_shrine_blue2
+  wildShrineNameLocalization: $wild_shrine_mountain
+  wildShrineRequestLocalization: $wild_shrine_mountain_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyWolf
+    tributeAmount: 3
+    rewards:
+      WolfPelt: 30
+      WolfMeat: 18
+      WolfFang: 40
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_wolves_attack
+    wildshrineWaveEndLocalization: $wild_wolves_defeated
+    wildLevelDefinition:
+      levelIndex: 12
+      biome: Mountain
+      waveFormat: Normal
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Wolf
+      - Fenring
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyFenring
+    tributeAmount: 2
+    rewards:
+      OnionSeeds: 60
+      WolfMeat: 20
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_wolves_attack
+    wildshrineWaveEndLocalization: $wild_wolves_defeated
+    wildLevelDefinition:
+      levelIndex: 14
+      biome: Mountain
+      waveFormat: Normal
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Wolf
+      - Fenring
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophySGolem
+    tributeAmount: 1
+    rewards:
+      Crystal: 8
+      Stone: 40
+      SilverOre: 70
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_golem_attack
+    wildshrineWaveEndLocalization: $wild_golem_defeated
+    wildLevelDefinition:
+      levelIndex: 14
+      biome: Mountain
+      waveFormat: Hard
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Wolf
+      - IceDrake
+      - StoneGolem
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyHatchling
+    tributeAmount: 3
+    rewards:
+      FreezeGland: 22
+      Obsidian: 40
+      LeatherScraps: 16
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_drake_attack
+    wildshrineWaveEndLocalization: $wild_drake_defeated
+    wildLevelDefinition:
+      levelIndex: 14
+      biome: Mountain
+      waveFormat: Normal
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Bat
+      - IceDrake
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyUlv
+    tributeAmount: 3
+    rewards:
+      WolfHairBundle: 20
+      JuteRed: 50
+      BoneFragments: 32
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_wolves_attack
+    wildshrineWaveEndLocalization: $wild_wolves_defeated
+    wildLevelDefinition:
+      levelIndex: 14
+      biome: Mountain
+      waveFormat: Normal
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Ulv
+      - Cultist
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyCultist
+    tributeAmount: 3
+    rewards:
+      WolfHairBundle: 28
+      JuteRed: 30
+      BoneFragments: 32
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_wolves_attack
+    wildshrineWaveEndLocalization: $wild_wolves_defeated
+    wildLevelDefinition:
+      levelIndex: 16
+      biome: Mountain
+      waveFormat: Normal
+      levelWarningLocalization: $mountain_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Ulv
+      - Cultist
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+- definitionForWildShrine: VF_wild_shrine_yellow1
+  wildShrineNameLocalization: $wild_shrine_plains
+  wildShrineRequestLocalization: $wild_shrine_plains_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyGoblin
+    tributeAmount: 4
+    rewards:
+      Coins: 15
+      BlackMetalScrap: 45
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_fulings_attack
+    wildshrineWaveEndLocalization: $wild_fulings_defeated
+    wildLevelDefinition:
+      levelIndex: 16
+      biome: Plains
+      waveFormat: Normal
+      levelWarningLocalization: $plains_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Fuling
+      - FulingArcher
+      - FulingShaman
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyGoblinShaman
+    tributeAmount: 2
+    rewards:
+      Coins: 25
+      BlackMetalScrap: 35
+      Barley: 45
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_fulings_attack
+    wildshrineWaveEndLocalization: $wild_fulings_defeated
+    wildLevelDefinition:
+      levelIndex: 17
+      biome: Plains
+      waveFormat: Normal
+      levelWarningLocalization: $plains_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Fuling
+      - FulingArcher
+      - FulingShaman
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyGoblinBrute
+    tributeAmount: 1
+    rewards:
+      Coins: 25
+      BlackMetalScrap: 35
+      Flax: 45
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_fulings_attack
+    wildshrineWaveEndLocalization: $wild_fulings_defeated
+    wildLevelDefinition:
+      levelIndex: 16
+      biome: Plains
+      waveFormat: Hard
+      levelWarningLocalization: $plains_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Fuling
+      - FulingArcher
+      - FulingShaman
+      - FulingBerserker
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyGrowth
+    tributeAmount: 2
+    rewards:
+      Coins: 25
+      BlackMetalScrap: 35
+      Tar: 16
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_fulings_attack
+    wildshrineWaveEndLocalization: $wild_fulings_defeated
+    wildLevelDefinition:
+      levelIndex: 16
+      biome: Plains
+      waveFormat: Normal
+      levelWarningLocalization: $plains_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Fuling
+      - FulingArcher
+      - Growth
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+- definitionForWildShrine: VF_wild_shrine_purple1
+  wildShrineNameLocalization: $wild_shrine_mistlands
+  wildShrineRequestLocalization: $wild_shrine_mistlands_request
+  shrineUnacceptedTributeLocalization: $wild_shrine_not_interested
+  shrineLargerTributeRequiredLocalization: $wild_shrine_hungry
+  wildShrineLevelsConfig:
+  - tributeName: TrophyHare
+    tributeAmount: 2
+    rewards:
+      haremeat: 35
+      ScaleHide: 45
+      CopperScrap: 65
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 20
+      biome: Mistlands
+      waveFormat: Normal
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Seeker
+      - Tick
+      - DvergerRouge
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophySeeker
+    tributeAmount: 3
+    rewards:
+      bugmeat: 55
+      Carapace: 45
+      RoyalJelly: 35
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 20
+      biome: Mistlands
+      waveFormat: Hard
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Seeker
+      - SeekerBrood
+      - DvergerRouge
+      - SeekerSoldier
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophySeekerBrute
+    tributeAmount: 1
+    rewards:
+      Sap: 55
+      IronScrap: 45
+      Mandible: 65
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 20
+      biome: Mistlands
+      waveFormat: Hard
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Seeker
+      - SeekerBrood
+      - DvergerRouge
+      - SeekerSoldier
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyGjall
+    tributeAmount: 3
+    rewards:
+      Chain: 55
+      Bilebag: 45
+      BlackCore: 65
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 20
+      biome: Mistlands
+      waveFormat: Hard
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Seeker
+      - Tick
+      - DvergerMageFire
+      - Gjall
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyTick
+    tributeAmount: 2
+    rewards:
+      SurtlingCore: 55
+      GiantBloodSack: 45
+      Softtissue: 65
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 20
+      biome: Mistlands
+      waveFormat: Hard
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - Seeker
+      - Tick
+      - DvergerRouge
+      - DvergerMageSupport
+      - Gjall
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+  - tributeName: TrophyDvergr
+    tributeAmount: 2
+    rewards:
+      MushroomJotunpuffs: 35
+      JuteBlue: 45
+      DvergrNeedle: 80
+    hardMode: false
+    siegeMode: false
+    wildshrineWaveStartLocalization: $wild_seekers_attack
+    wildshrineWaveEndLocalization: $wild_seekers_defeated
+    wildLevelDefinition:
+      levelIndex: 18
+      biome: Mistlands
+      waveFormat: Dynamic
+      levelWarningLocalization: $mistlands_warning_wilderness
+      maxCreaturesPerPhaseOverride: 25
+      onlySelectMonsters:
+      - SeekerBrood
+      - DvergerRouge
+      - DvergerMage
+      - DvergerMageFire
+      - DvergerMageIce
+      - DvergerMageSupport
+      excludeSelectMonsters: 
+      commonSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      rareSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+      eliteSpawnModifiers:
+        linearIncreaseRandomWaveAdjustment: true
+

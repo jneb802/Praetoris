@@ -1,0 +1,751 @@
+{
+  "TargetFile": "legendaries.json",
+  "Author": "Majestic",
+  "RequireAll": true,
+  "Priority": 600,
+  "Patches": [
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Dyrnwyn')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Dyrnwyn')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Dyrnwyn')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SleipnirsHoof')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SleipnirsHoof')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SleipnirsHoof')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gungnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gungnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gungnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Mjolnir')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Lindisfarne')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 20
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 30
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 2
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'Executioner')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 100
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'Executioner')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 150
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'Executioner')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 1
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Gram')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'Opportunist')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Angurvadal')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Laevateinn')].GuaranteedMagicEffects[?(@.Type == 'ModifyBackstab')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'NjordsFavor')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Skofnung')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'AddSlashingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Hofund')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFireDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'ShardMace')].GuaranteedMagicEffects[?(@.Type == 'AddPoisonDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'Bloodmace')].GuaranteedMagicEffects[?(@.Type == 'LifeSteal')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'GunnarsAtgeir')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SkadiBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SkadiBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'SkadiBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'ExplosiveArrows')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'ExplosiveArrows')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'UllrBow')].GuaranteedMagicEffects[?(@.Type == 'ExplosiveArrows')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'QuickDraw')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'QuickDraw')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'QuickDraw')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'EndlessBow')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddLightningDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'AddPiercingDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyMovementSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackStaminaUse')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'BlackSunSpite')].GuaranteedMagicEffects[?(@.Type == 'ModifyAttackSpeed')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'AddFrostDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'RagnarBattleAxe')].GuaranteedMagicEffects[?(@.Type == 'ModifyPhysicalDamage')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallLegs')].GuaranteedMagicEffects[?(@.Type == 'AddMovementSkills')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallLegs')].GuaranteedMagicEffects[?(@.Type == 'AddMovementSkills')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallLegs')].GuaranteedMagicEffects[?(@.Type == 'AddMovementSkills')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'ModifyArmor')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'ModifyArmor')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'ModifyArmor')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'IncreaseStamina')].Values.MinValue",
+      "Action": "Overwrite",
+      "Value": 10
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'IncreaseStamina')].Values.MaxValue",
+      "Action": "Overwrite",
+      "Value": 15
+    },
+    {
+      "Path": "$.LegendaryItems[?(@.ID == 'HeimdallChest')].GuaranteedMagicEffects[?(@.Type == 'IncreaseStamina')].Values.Increment",
+      "Action": "Overwrite",
+      "Value": 0.5
+    },
+	
+	{
+      "Path": "$.LegendarySets[?(@.ID == 'Heimdall')].SetBonuses[?(@.Effect.Type == 'ModifyBlockPower')].Effect.Values", 
+      "Action": "Overwrite",
+      "Value": { "MinValue": 20, "MaxValue": 20, "Increment": 1 }
+    },
+	
+    {
+      "Path": "$.LegendarySets[?(@.ID == 'Ragnar')].SetBonuses[?(@.Effect.Type == 'ModifyHealthRegen')].Effect.Values", 
+      "Action": "Overwrite",
+      "Value": { "MinValue": 10, "MaxValue": 10, "Increment": 1 }
+    },
+    {
+      "Path": "$.LegendarySets[?(@.ID == 'Ragnar')].SetBonuses[?(@.Effect.Type == 'FrostDamageAOE')].Effect.Values", 
+      "Action": "Overwrite",
+      "Value": { "MinValue": 10, "MaxValue": 10, "Increment": 1 }
+    }
+  ]
+}

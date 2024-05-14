@@ -1,0 +1,4 @@
+- prefab: CastleKit_braided_box01
+  type: destroy
+  spawns:
+  - Root

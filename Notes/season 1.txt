@@ -1,0 +1,86 @@
+Server reset
+
+- Make sure to save server before shutting down
+- Add to whitelist and server mods
+
+Restart the server tasks
+
+- Set the Epic Loot to config lock
+- Do the upgrade world cooking additions
+
+Double check all the config lock
+
+Server changes to make
+
+- Add enchants to fishing pole
+- ~~Increase the ward limit~~
+- ~~Remove bone arrows from warfare~~
+- ~~Change bounty times, icnrease it mor~~
+- ~~Ward radius needs to increase to something higher~~
+- Enchants suck
+- ~~Make boss stones cost a trophy~~
+- ~~farming mod is meh, the view time to grow is nice. I don’t love the increased pick radius.~~
+- Gizmo is uneasy, move to greylist
+- So resstarts occasionally
+- Change the default X,Y of chest in AzuEPI
+- Add intro text change mod with info about server
+- Add /bind to banned commands
+- Add custom scripts and biomes from Jere
+- Add Valheim fortress
+
+Marketplace rewards
+
+- surtling core - collect skele kills
+- queen bee - collect berries
+- black troll set you can dye, get an extra perk
+- Kill trolls for ores
+- Kill bosses
+
+Additions
+
+- ~~Add groups~~ DONE
+- Add CLLC
+- Add dual weild
+- Add steel works
+- Add monstrum, decrease spawn rates
+- Add hildr request per player mod by smoothbrain
+- Add world advancement progression
+    - Private keys
+    - Increase skill levels (or use skill capper by azumat)
+- Add neck monsters, decrease spawn rates
+- Add multiplayer tweaks, prevent the world from spawning brutes on players that have not killed the elder
+- Add world advancement progression, don’t want players that haven’t killed elder to have the brute and shaman spawns.
+- Try using the wayshrine mod by azumatt and spawn locations with it
+- Add Valheim armory through marketplace quests
+    - Remove the staves that use stamina instead of etir
+- ~~Add ChaosArmor~~ Nope
+- Add dungeon splitter from jere
+
+Server bugs to test
+
+- WardisLove bug - The days on ward to expire is the real days vs ingame days
+- The user problem is that its annoying to get too many bounties from other players around you. Trader bounty limit bug - the limit for bounties is higher than the current limit
+
+Special configurations
+
+- CLLC item and creature configs
+- WackyDB custom items, foods, status effects, from RelicHeim
+- EpicLoot configs
+
+Location mod feedback
+
+- The chest size on the custom locations is larger than
+- The distance between meadows church is too small
+- The monsters should not respawn so quickly
+- Decrease the surtling core drop rate in further blackforest locations
+- Add bees to the meadows locations
+- Fix the bug in meadows pack 1 from majestic
+
+More Ore Deposits
+
+- Increase the conversion ratio of the gold ore to coins
+- Ore deposits should only take pickaxe dmg
+- Put silver ore underground with wishbone script
+- Silver texture is too easy to see
+
+Epic loot adjustments:

@@ -1,0 +1,76 @@
+#################################################
+# Shrine of Challenge Rewards Configuration
+#################################################
+# Rewards configurations have a number of key values
+#  Coin:                                 |- The name of the reward, this will be the diplayed name if there is no localization for this reward, which is likely the case for any custom entries.
+#    enabled: true                       |- Whether or not the reward is enabled, you can use this to disable any vanilla rewards you do not want. At least 1 reward must be available at ALL times.
+#    resource_cost: 5                    |- This is the cost to gain 1 of the particular reward. Points are generated based on how many monsters are spawned.
+#    resource_prefab: "Coins"            |- This is the unity prefab name for a resource, you will often see mods list the prefabs they have added. Prefabs are also listed on the valheim wiki.
+#    required_boss: "None"               |- This must be one of the following values: "None" "Eikythr" "TheElder" "BoneMass" "Moder" "Yagluth" "TheQueen"
+rewards:
+  Coin:
+    resouceCost: 5
+    requiredBoss: None
+    resourcePrefab: Coins
+    enabled: true
+  Wood:
+    resouceCost: 12
+    requiredBoss: Eikythr
+    resourcePrefab: Wood
+    enabled: true
+  CoreWood:
+    resouceCost: 20
+    requiredBoss: BoneMass
+    resourcePrefab: RoundLog
+    enabled: true
+  FineWood:
+    resouceCost: 26
+    requiredBoss: Moder
+    resourcePrefab: FineWood
+    enabled: true
+  Copper:
+    resouceCost: 45
+    requiredBoss: TheElder
+    resourcePrefab: CopperOre
+    enabled: true
+  Tin:
+    resouceCost: 40
+    requiredBoss: TheElder
+    resourcePrefab: TinOre
+    enabled: true
+  Iron:
+    resouceCost: 60
+    requiredBoss: BoneMass
+    resourcePrefab: IronScrap
+    enabled: true
+  Silver:
+    resouceCost: 70
+    requiredBoss: Moder
+    resourcePrefab: SilverOre
+    enabled: true
+  Blackmetal:
+    resouceCost: 80
+    requiredBoss: Yagluth
+    resourcePrefab: BlackMetalScrap
+    enabled: true
+  Tar:
+    resouceCost: 60
+    requiredBoss: Yagluth
+    resourcePrefab: Tar
+    enabled: true
+  Guck:
+    resouceCost: 40
+    requiredBoss: BoneMass
+    resourcePrefab: Guck
+    enabled: false
+  Sap:
+    resouceCost: 100
+    requiredBoss: TheQueen
+    resourcePrefab: Sap
+    enabled: true
+  SoftTissue:
+    resouceCost: 140
+    requiredBoss: TheQueen
+    resourcePrefab: Softtissue
+    enabled: true
+

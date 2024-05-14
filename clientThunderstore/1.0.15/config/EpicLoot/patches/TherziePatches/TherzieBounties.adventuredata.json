@@ -1,0 +1,58 @@
+{
+    "TargetFile": "adventuredata.json",
+    "Author": "Majestic",
+    "RequireAll": true,
+    "Patches": [
+    {
+     "Path": "$.Bounties.Targets",
+     "Action": "AppendAll",
+     "Value": [
+		{ "Biome": "Meadows",     	"TargetID": "Fox_TW",             	"RewardGold": 0, "RewardIron": 1, "RewardCoins": 50   },
+		{ "Biome": "Meadows",     	"TargetID": "Fox_TW",             	"RewardGold": 0, "RewardIron": 2, "RewardCoins": 60   },
+
+		{ "Biome": "BlackForest", 	"TargetID": "Razorback_TW",        	"RewardGold": 0, "RewardIron": 2, "RewardCoins": 100  },
+		{ "Biome": "BlackForest", 	"TargetID": "Razorback_TW",        	"RewardGold": 1, "RewardIron": 1, "RewardCoins": 120  },
+		{ "Biome": "BlackForest", 	"TargetID": "BlackBear_TW", 		"RewardGold": 0, "RewardIron": 2, "RewardCoins": 135  },
+		{ "Biome": "BlackForest", 	"TargetID": "BlackBear_TW", 		"RewardGold": 1, "RewardIron": 1, "RewardCoins": 150  },
+		{ "Biome": "BlackForest", 	"TargetID": "GDAncientShaman_TW", 	"RewardGold": 0, "RewardIron": 2, "RewardCoins": 160  },
+		{ "Biome": "BlackForest", 	"TargetID": "GDAncientShaman_TW", 	"RewardGold": 1, "RewardIron": 1, "RewardCoins": 200  },
+
+		{ "Biome": "Swamp",       	"TargetID": "RottingElk_TW",        "RewardGold": 0, "RewardIron": 3, "RewardCoins": 220  },
+		{ "Biome": "Swamp",       	"TargetID": "RottingElk_TW",        "RewardGold": 1, "RewardIron": 1, "RewardCoins": 230  },
+		{ "Biome": "Swamp",       	"TargetID": "HelWraith_TW",         "RewardGold": 0, "RewardIron": 1, "RewardCoins": 230  },
+		{ "Biome": "Swamp",       	"TargetID": "HelWraith_TW",         "RewardGold": 1, "RewardIron": 1, "RewardCoins": 250  },
+		{ "Biome": "Swamp",       	"TargetID": "Crawler_TW",     		"RewardGold": 0, "RewardIron": 2, "RewardCoins": 300  },
+		{ "Biome": "Swamp",       	"TargetID": "Crawler_TW",     		"RewardGold": 1, "RewardIron": 2, "RewardCoins": 330  },
+
+		{ "Biome": "Mountain", 		"TargetID": "ObsidianGolem_TW", 	"RewardGold": 0, "RewardIron": 3, "RewardCoins": 380  },
+		{ "Biome": "Mountain", 		"TargetID": "ObsidianGolem_TW", 	"RewardGold": 2, "RewardIron": 1, "RewardCoins": 400  },
+		{ "Biome": "Mountain", 		"TargetID": "GrizzlyBear_TW", 		"RewardGold": 0, "RewardIron": 2, "RewardCoins": 350  },
+		{ "Biome": "Mountain", 		"TargetID": "GrizzlyBear_TW", 		"RewardGold": 2, "RewardIron": 1, "RewardCoins": 380  },
+
+		{ "Biome": "Plains", 		"TargetID": "Prowler_TW", 			"RewardGold": 0, "RewardIron": 5, "RewardCoins": 480  },
+		{ "Biome": "Plains", 		"TargetID": "Prowler_TW", 			"RewardGold": 3, "RewardIron": 2, "RewardCoins": 500  }
+		]
+	},
+	{
+     "Path": "$.Bounties.Bosses",
+     "Action": "AppendAll",
+     "Value": [
+		{
+         "Biome": "Meadows",
+         "BossPrefab": "BossAsmodeus_TW",
+         "BossDefeatedKey": "defeated_eikthyr"
+		},
+		{
+         "Biome": "BlackForest",
+         "BossPrefab": "BossSvalt_TW",
+         "BossDefeatedKey": "defeated_gdking"
+		},
+		{
+         "Biome": "Swamp",
+         "BossPrefab": "BossVrykolathas_TW",
+         "BossDefeatedKey": "defeated_bonemass"
+		}
+      ]
+    }
+  ]
+}

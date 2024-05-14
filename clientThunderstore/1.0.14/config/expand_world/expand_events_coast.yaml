@@ -1,0 +1,177 @@
+- name: deaths
+  duration: 120
+  nearBaseOnly: false
+  biome: RockyCoast
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  startMessage: You hear buzzing...
+  endMessage: The buzzing fades.
+  forceMusic: CombatEventL3
+  forceEnvironment: Coast Heat
+  spawns:
+  - prefab: Deathsquito
+    maxSpawned: 2
+    spawnInterval: 5
+    minLevel: 1
+    maxLevel: 2
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 10
+    huntPlayer: true
+    groundOffset: 20
+    overrideLevelupChance: 15
+  - prefab: Deathsquito
+    maxSpawned: 2
+    spawnInterval: 9
+    minLevel: 1
+    maxLevel: 2
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 10
+    huntPlayer: true
+    groundOffset: 20
+    overrideLevelupChance: 35
+  pauseIfNoPlayerInArea: true
+- name: wings
+  duration: 120
+  nearBaseOnly: false
+  biome: RockyCoast
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  startMessage: The wings of the mountain attack.
+  endMessage: Their wings have been clipped.
+  forceMusic: CombatEventL2
+  forceEnvironment: Coast Rain
+  spawns:
+  - prefab: Hatchling
+    maxSpawned: 2
+    spawnInterval: 20
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 20
+    overrideLevelupChance: 25
+  - prefab: Bat
+    maxSpawned: 7
+    spawnInterval: 15
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 3
+    groupSizeMax: 4
+    groupRadius: 4
+    maxTilt: 90
+    huntPlayer: true
+    groundOffset: 20
+    overrideLevelupChance: 50
+  pauseIfNoPlayerInArea: true
+- name: sticky
+  duration: 120
+  nearBaseOnly: false
+  biome: RockyCoast
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  startMessage: A sticky situation.
+  endMessage: Things are no longer sticky.
+  forceMusic: CombatEventL4
+  forceEnvironment: Coast Rain
+  spawns:
+  - prefab: Blob
+    maxSpawned: 3
+    spawnInterval: 15
+    minLevel: 1
+    maxLevel: 2
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 2
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 50
+  - prefab: BlobElite
+    maxSpawned: 1
+    spawnInterval: 30
+    minLevel: 1
+    maxLevel: 2
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 50
+  - prefab: BlobTar
+    maxSpawned: 2
+    spawnInterval: 25
+    minLevel: 1
+    maxLevel: 1
+    minAltitude: -1000
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 60
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 0
+  pauseIfNoPlayerInArea: true
+- name: leeches
+  duration: 90
+  nearBaseOnly: false
+  biome: RockyCoast
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  startMessage: Better get to land.
+  endMessage: Check your boat.
+  forceMusic: CombatEventL3
+  forceEnvironment: Coast Storm
+  spawns:
+  - prefab: Leech
+    maxSpawned: 8
+    spawnInterval: 8
+    minLevel: 1
+    maxLevel: 3
+    minAltitude: -1000
+    maxAltitude: -0.1
+    spawnDistance: 10
+    spawnRadiusMin: 40
+    spawnRadiusMax: 80
+    groupSizeMin: 2
+    groupSizeMax: 3
+    groupRadius: 10
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 50
+  pauseIfNoPlayerInArea: true

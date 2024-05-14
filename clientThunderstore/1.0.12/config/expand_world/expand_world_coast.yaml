@@ -1,0 +1,6 @@
+- biome: RockyCoast
+  maxAltitude: 12
+  minAltitude: -23
+  maxDistance: 0.9
+  minDistance: 0.4
+  amount: 0.2

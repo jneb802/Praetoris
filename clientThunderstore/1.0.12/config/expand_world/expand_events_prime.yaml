@@ -1,0 +1,205 @@
+- name: roots
+  duration: 120
+  nearBaseOnly: false
+  biome: PrimevalForest
+  requiredGlobalKeys: killed_surtling, defeated_bonemass
+  requiredPlayerKeys: killed_surtling, GP_TheElder
+  playerDistance: 100
+  startMessage: Only you can prevent forest fires...
+  endMessage: The bear is pleased.
+  forceMusic: CombatEventL2
+  forceEnvironment: PrimeDark
+  spawns:
+  - prefab: TentaRoot
+    biome: PrimevalForest
+    maxSpawned: 30
+    spawnInterval: 1
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 1
+    spawnRadiusMax: 3
+    groupSizeMin: 3
+    groupSizeMax: 4
+    groupRadius: 13
+    huntPlayer: true
+    groundOffset: -0.05
+    overrideLevelupChance: 50
+  - prefab: Surtling
+    biome: PrimevalForest
+    maxSpawned: 3
+    spawnInterval: 7
+    minLevel: 1
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 20
+    spawnRadiusMax: 40
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 1
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 20
+  pauseIfNoPlayerInArea: true
+- name: ghosts
+  duration: 120
+  nearBaseOnly: false
+  biome: PrimevalForest
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  playerDistance: 100
+  startMessage: A ghost event.
+  endMessage: The ghosts have been smudged.
+  forceMusic: CombatEventL3
+  forceEnvironment: PrimeDark
+  spawns:
+  - prefab: Ghost
+    biome: PrimevalForest
+    maxSpawned: 2
+    spawnInterval: 8
+    minLevel: 1
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 20
+    spawnRadiusMax: 40
+    groupSizeMin: 1
+    groupSizeMax: 2
+    groupRadius: 7
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 20
+  - prefab: Wraith
+    biome: PrimevalForest
+    maxSpawned: 2
+    spawnInterval: 16
+    minLevel: 1
+    maxLevel: 2
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 20
+    spawnRadiusMax: 40
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 20
+    overrideLevelupChance: 20
+  pauseIfNoPlayerInArea: true
+- name: skeletons2
+  duration: 120
+  nearBaseOnly: false
+  biome: PrimevalForest
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  playerDistance: 100
+  startMessage: A skeleton super surprise!
+  endMessage: Skeletons are super tired of fighting.
+  forceMusic: CombatEventL3
+  forceEnvironment: PrimeDark
+  spawns:
+  - prefab: Skeleton
+    biome: PrimevalForest
+    maxSpawned: 8
+    spawnInterval: 15
+    minLevel: 1
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 30
+    spawnRadiusMax: 50
+    groupSizeMin: 3
+    groupSizeMax: 5
+    groupRadius: 4
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 50
+  - prefab: Skeleton_Poison
+    biome: PrimevalForest
+    maxSpawned: 2
+    spawnInterval: 20
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 30
+    spawnRadiusMax: 50
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 1
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 35
+  pauseIfNoPlayerInArea: true
+- name: greys
+  duration: 120
+  nearBaseOnly: false
+  biome: PrimevalForest
+  requiredGlobalKeys: defeated_bonemass
+  requiredPlayerKeys: GP_TheElder
+  playerDistance: 100
+  startMessage: The forest is rampaging.
+  endMessage: The forest slumbers.
+  forceMusic: CombatEventL4
+  forceEnvironment: PrimeDark
+  spawns:
+  - prefab: Greydwarf
+    biome: PrimevalForest
+    maxSpawned: 6
+    spawnInterval: 5
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 30
+    spawnRadiusMax: 50
+    groupSizeMin: 2
+    groupSizeMax: 4
+    groupRadius: 3
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 75
+  - prefab: Greydwarf_Shaman
+    biome: PrimevalForest
+    maxSpawned: 2
+    spawnInterval: 5
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 30
+    spawnRadiusMax: 50
+    groupSizeMin: 1
+    groupSizeMax: 1
+    groupRadius: 1
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 65
+  - prefab: Greydwarf_Elite
+    biome: PrimevalForest
+    maxSpawned: 4
+    spawnInterval: 5
+    minLevel: 2
+    maxLevel: 3
+    minAltitude: 0
+    maxAltitude: 2000
+    spawnDistance: 10
+    spawnRadiusMin: 30
+    spawnRadiusMax: 50
+    groupSizeMin: 2
+    groupSizeMax: 3
+    groupRadius: 5
+    huntPlayer: true
+    groundOffset: 0
+    overrideLevelupChance: 50
+  pauseIfNoPlayerInArea: true

@@ -1,0 +1,9 @@
+- name: rockycoast
+  clips:
+  - Meadows - Village & Farm
+  volume: 0.2
+  fadeInTime: 10
+  alwaysFadeOut: true
+  ambientMusic: true
+  loop: true
+  resume: true
