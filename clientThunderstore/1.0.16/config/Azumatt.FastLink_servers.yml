@@ -2,7 +2,7 @@
 # Servers are automatically sorted alphabetically when shown in the list.
 # This file live updates the in-game listing. Feel free to change it while in the main menu.
 
-Praetoris:
-  address: 144.126.153.17
-  port: 31900
-  password: cavemen
+Praetoris (pre_ashlands):
+  address: ancient.dathost.net
+  port: 20658
+  password: warp123

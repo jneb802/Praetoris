@@ -1,7 +1,7 @@
 ﻿{
   "name": "Praetoris",
   "description": "Hardcore exploration modpack for the Praetoria server",
-  "version_number": "1.0.15",
+  "version_number": "1.0.16",
   "website_url": "https://discord.gg/Ub7GQHxEzE",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2202",
