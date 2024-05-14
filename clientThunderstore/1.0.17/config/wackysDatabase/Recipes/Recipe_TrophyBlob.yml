@@ -1,0 +1,11 @@
+name: TrophyBlob
+clonePrefabName: TrophyBlob
+craftingStation: $piece_workbench
+minStationLevel: 1
+maxStationLevelCap: 
+repairStation: 
+amount: 1
+disabled: false
+requireOnlyOneIngredient: false
+reqs:
+- Ooze:10:1:True

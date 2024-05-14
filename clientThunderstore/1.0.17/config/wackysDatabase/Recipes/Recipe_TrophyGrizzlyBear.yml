@@ -1,0 +1,12 @@
+name: TrophyGrizzlyBear_TW
+clonePrefabName: TrophyGrizzlyBear_TW
+craftingStation: $piece_workbench
+minStationLevel: 1
+maxStationLevelCap: 
+repairStation: 
+amount: 1
+disabled: false
+requireOnlyOneIngredient: false
+upgrade_reqs: []
+reqs:
+- GrizzlyBearPelt_TW:10:1:True
