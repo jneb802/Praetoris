@@ -1,0 +1,6 @@
+- biome: primevalforest
+  maxAltitude: 53
+  minAltitude: 10
+  maxDistance: 0.5
+  minDistance: 0.1
+  amount: 0.2

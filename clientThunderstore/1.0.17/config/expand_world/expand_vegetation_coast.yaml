@@ -652,14 +652,6 @@
   maxAltitude: 55
   maxTerrainDelta: 2
   groupRadius: 1
-- prefab: Pickable_MeatPile
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
 - prefab: Pickable_Tar
   min: 0
   max: 1
@@ -677,62 +669,6 @@
   minAltitude: 0.25
   maxAltitude: 25
   groundOffset: 0.15
-  groupRadius: 20
-- prefab: Pickable_BogIronOre
-  min: 0
-  max: 0.25
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_SunkenCryptRandom
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_MountainRemains01_buried
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_ForestCryptRemains01
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_ForestCryptRemains02
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_ForestCryptRemains03
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
-  groupRadius: 20
-- prefab: Pickable_ForestCryptRemains04
-  min: 0
-  max: 1
-  chanceToUseGroundTilt: 1
-  biome: RockyCoast
-  minAltitude: -3
-  maxAltitude: 25
   groupRadius: 20
 - prefab: MineRock_Tin
   min: 2

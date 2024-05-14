@@ -347,23 +347,9 @@
   groupSizeMin: 3
   groupSizeMax: 6
   groupRadius: 5
-- prefab: Pickable_Mushroom_blue
-  min: 2
-  max: 6
-  scaleMax: 1.8
-  biome: PrimevalForest
-  biomeArea: median
-  minAltitude: 1
-  maxAltitude: 1000
-  maxOceanDepth: 2
-  maxTilt: 25
-  maxTerrainDelta: 2
-  groupSizeMin: 3
-  groupSizeMax: 6
-  groupRadius: 5
 - prefab: RaspberryBush
-  min: 3
-  max: 6
+  min: 0
+  max: 3
   biome: PrimevalForest
   minAltitude: 1
   maxAltitude: 1000
@@ -371,78 +357,3 @@
   maxTerrainDelta: 5
   groupSizeMax: 8
   groupRadius: 8
-- prefab: BlueberryBush
-  min: 2
-  max: 5
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxOceanDepth: 2
-  maxTerrainDelta: 5
-  groupSizeMax: 8
-  groupRadius: 8
-- prefab: Pickable_MountainRemains01_buried
-  min: 1
-  max: 1
-  scaleMax: 1.5
-  chanceToUseGroundTilt: 1
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxTerrainDelta: 6
-  snapToStaticSolid: true
-  groupSizeMin: 0
-  groupSizeMax: 1
-  groupRadius: 5
-- prefab: Pickable_ForestCryptRemains01
-  min: 1
-  max: 1
-  scaleMax: 1.5
-  chanceToUseGroundTilt: 1
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxTerrainDelta: 6
-  snapToStaticSolid: true
-  groupSizeMin: 0
-  groupSizeMax: 1
-  groupRadius: 5
-- prefab: Pickable_ForestCryptRemains02
-  min: 1
-  max: 1
-  scaleMax: 1.5
-  chanceToUseGroundTilt: 1
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxTerrainDelta: 6
-  snapToStaticSolid: true
-  groupSizeMin: 0
-  groupSizeMax: 1
-  groupRadius: 5
-- prefab: Pickable_ForestCryptRemains03
-  min: 1
-  max: 1
-  scaleMax: 1.5
-  chanceToUseGroundTilt: 1
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxTerrainDelta: 6
-  snapToStaticSolid: true
-  groupSizeMin: 0
-  groupSizeMax: 1
-  groupRadius: 5
-- prefab: Pickable_ForestCryptRemains04
-  min: 1
-  max: 1
-  scaleMax: 1.5
-  chanceToUseGroundTilt: 1
-  biome: PrimevalForest
-  minAltitude: 1
-  maxAltitude: 1000
-  maxTerrainDelta: 6
-  snapToStaticSolid: true
-  groupSizeMin: 0
-  groupSizeMax: 1
-  groupRadius: 5

@@ -1,0 +1,30 @@
+- biome: RockyCoast
+  name: Rocky coast
+  terrain: plains
+  altitudeDelta: -0.25
+  altitudeMultiplier: 0.5
+  waterDepthMultiplier: 1.5
+  environments:
+  - environment: Coast Clear
+    weight: 1
+  - environment: Coast Heat
+    weight: 0.75
+  - environment: Coast Rain
+    weight: 0.5
+  - environment: Coast Storm
+    weight: 0.25
+  maximumAltitude: 1
+  minimumAltitude: -15
+  color:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  mapColorMultiplier: -.5
+  mapColor:
+    r: 1
+    g: .9
+    b: .65
+    a: 1
+  musicDay: rockycoast
+  musicNight: rockycoast
