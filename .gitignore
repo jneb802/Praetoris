@@ -7,7 +7,6 @@ dev/
 
 # Config/ — local/personal files that shouldn't be deployed
 Config/BepInEx.cfg
-Config/Azumatt.FastLink_servers.yml
 Config/Azumatt.AzuAntiCheat_Webhook.yml
 Config/com.maxsch.valheim.vnei.blacklist.txt
 Config/Hunter_Legacy.*.yml

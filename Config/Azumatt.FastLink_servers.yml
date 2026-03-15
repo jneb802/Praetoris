@@ -1,0 +1,5 @@
+Praetoris:
+  address: 178.156.172.16
+  port: 2456
+  password: warpalicious
+  ispvp: true
