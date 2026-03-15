@@ -71,10 +71,7 @@ jobs:
           echo "Publishing Praetoris v${VERSION} to Thunderstore..."
           tcli publish \
             --file "Praetoris-${VERSION}.zip" \
-            --repository https://thunderstore.io \
-            --package-namespace warpalicious \
-            --package-name Praetoris \
-            --package-version "${VERSION}"
+            --repository https://thunderstore.io
 
   tag:
     runs-on: self-hosted
