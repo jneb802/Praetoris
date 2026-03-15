@@ -6,6 +6,8 @@
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2333",
     "ValheimModding-Jotunn-2.28.0",
+    "ValheimModding-JsonDotNET-13.0.4",
+    "ValheimModding-YamlDotNet-16.3.1",
     "Azumatt-AzuAntiCheat-4.3.11",
     "RandyKnapp-EpicLoot-0.12.11",
     "MidnightMods-ValheimFortress-0.32.11",
