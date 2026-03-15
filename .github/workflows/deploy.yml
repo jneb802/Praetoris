@@ -33,7 +33,7 @@ jobs:
         run: |
           BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
           echo "Syncing configs to $BEPINEX_CONFIG..."
-          rsync -av --delete Config/ "$BEPINEX_CONFIG/"
+          rsync -av --no-group --delete Config/ "$BEPINEX_CONFIG/"
           echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
 
       - name: Start Valheim server
