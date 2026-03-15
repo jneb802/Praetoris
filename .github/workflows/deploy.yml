@@ -22,7 +22,7 @@ jobs:
       - name: Stop Valheim server
         run: |
           echo "Stopping Valheim server..."
-          sudo systemctl stop valheim-server  # TODO: confirm service name
+          sudo systemctl stop valheim
 
       - name: Install mods via tcli
         run: |
@@ -31,8 +31,7 @@ jobs:
 
       - name: Sync configs to server
         run: |
-          # TODO: confirm actual BepInEx config path
-          BEPINEX_CONFIG="/opt/valheim/BepInEx/config"
+          BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
           echo "Syncing configs to $BEPINEX_CONFIG..."
           rsync -av --delete Config/ "$BEPINEX_CONFIG/"
           echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
@@ -40,10 +39,10 @@ jobs:
       - name: Start Valheim server
         run: |
           echo "Starting Valheim server..."
-          sudo systemctl start valheim-server  # TODO: confirm service name
+          sudo systemctl start valheim
           echo "Waiting 30s for server to initialize..."
           sleep 30
-          sudo systemctl status valheim-server --no-pager || echo "::warning::Server may not have started correctly"
+          sudo systemctl status valheim --no-pager || echo "::warning::Server may not have started correctly"
 
   publish:
     runs-on: self-hosted

@@ -39,8 +39,7 @@ jobs:
 
       - name: Check Valheim server paths
         run: |
-          # TODO: update these paths once server layout is confirmed
-          VALHEIM_DIR="/opt/valheim"
+          VALHEIM_DIR="/home/valheim/server"
           BEPINEX_CONFIG="$VALHEIM_DIR/BepInEx/config"
           BEPINEX_PLUGINS="$VALHEIM_DIR/BepInEx/plugins"
 
@@ -55,8 +54,7 @@ jobs:
 
       - name: Check sudoers for Valheim service
         run: |
-          # TODO: update service name once confirmed
-          sudo systemctl status valheim-server --no-pager 2>&1 || echo "Service not found or sudoers not configured"
+          sudo systemctl status valheim --no-pager 2>&1 || echo "Service not found or sudoers not configured"
 
       - name: Check Thunderstore token
         env:
