@@ -17,9 +17,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install PyYAML
-        run: python3 -m pip install --user pyyaml
-
       - name: Generate changelog
         run: python3 scripts/generate-changelog.py --base origin/main --output changelog.md
 
