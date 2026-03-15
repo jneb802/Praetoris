@@ -1,31 +1,40 @@
 #!/bin/bash
 set -euo pipefail
 
-# Install all mods from manifest.json dependencies via tcli
-# Usage: ./scripts/install-mods.sh [manifest.json path]
+# Install mods from one or more JSON files with a "dependencies" array.
+# Usage: ./scripts/install-mods.sh manifest.json [server-mods.json ...]
 
-MANIFEST="${1:-manifest.json}"
-
-if [ ! -f "$MANIFEST" ]; then
-  echo "Error: $MANIFEST not found"
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 <manifest.json> [additional.json ...]"
   exit 1
 fi
 
-echo "Reading dependencies from $MANIFEST..."
-DEPS=$(jq -r '.dependencies[]' "$MANIFEST")
-COUNT=$(echo "$DEPS" | wc -l)
-echo "Found $COUNT dependencies"
-echo ""
-
 FAILED=0
-i=0
-echo "$DEPS" | while read -r dep; do
-  i=$((i + 1))
-  echo "[$i/$COUNT] Installing $dep..."
-  if ! tcli install valheim "$dep"; then
-    echo "WARNING: Failed to install $dep"
-    FAILED=$((FAILED + 1))
+TOTAL=0
+
+for FILE in "$@"; do
+  if [ ! -f "$FILE" ]; then
+    echo "Warning: $FILE not found, skipping"
+    continue
   fi
+
+  echo "Reading dependencies from $FILE..."
+  DEPS=$(jq -r '.dependencies[]' "$FILE")
+  COUNT=$(echo "$DEPS" | wc -l | tr -d ' ')
+  echo "Found $COUNT dependencies"
+  echo ""
+
+  i=0
+  echo "$DEPS" | while read -r dep; do
+    i=$((i + 1))
+    echo "[$i/$COUNT] Installing $dep..."
+    if ! tcli install valheim "$dep"; then
+      echo "WARNING: Failed to install $dep"
+      FAILED=$((FAILED + 1))
+    fi
+  done
+
+  TOTAL=$((TOTAL + COUNT))
 done
 
 if [ "$FAILED" -gt 0 ]; then
@@ -35,4 +44,4 @@ if [ "$FAILED" -gt 0 ]; then
 fi
 
 echo ""
-echo "All $COUNT dependencies installed successfully"
+echo "All $TOTAL dependencies installed successfully"
