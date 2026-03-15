@@ -1,0 +1,9 @@
+t_o: tool tool_object
+t_s: tool tool_spawn
+t_t: tool tool_terrain
+tool_area: hammer from=<x>,<z>,<y> circle=<r>-<r2> angle=<a> rect=<w>-<w2>,<d> height=<h> ignore=<ignore> id=<include>
+tool_object: object from=<x>,<z>,<y> circle=<r>-<r2> angle=<a> rect=<w>-<w2>,<d> height=<h> ignore=<ignore> id=<include>
+tool_slope: tool_terrain_to slope
+tool_spawn: spawn_object $$ from=<x>,<z>,<y> radius=<r>-<r2>
+tool_terrain: terrain from=<x>,<z>,<y> circle=<r>-<r2> angle=<a> rect=<w>-<w2>,<d>
+tool_terrain_to: terrain to=<x>,<z>,<y> circle=<r>-<r2> rect=<w>-<w2>,<d>
