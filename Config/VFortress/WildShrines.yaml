@@ -60,10 +60,6 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers: 
       eliteSpawnModifiers: 
   - tributeName: TrophyDeer
@@ -86,10 +82,6 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers: 
       eliteSpawnModifiers: 
   - tributeName: TrophyNeck
@@ -112,10 +104,6 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers: 
       eliteSpawnModifiers: 
 - definitionForWildShrine: VF_wild_shrine_blue1
@@ -145,10 +133,6 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers: 
       eliteSpawnModifiers: 
   - tributeName: TrophyGreydwarfBrute
@@ -173,16 +157,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers: 
   - tributeName: TrophyGreydwarfShaman
     tributeAmount: 2
@@ -206,16 +182,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers: 
   - tributeName: TrophyForestTroll
     tributeAmount: 4
@@ -239,16 +207,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers: 
   - tributeName: TrophySkeleton
     tributeAmount: 4
@@ -271,16 +231,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers: 
   - tributeName: TrophySkeletonPoison
     tributeAmount: 1
@@ -305,16 +257,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers: 
 - definitionForWildShrine: VF_wild_shrine_green2
   wildShrineNameLocalization: $wild_shrine_swamp
@@ -345,22 +289,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyDraugr
     tributeAmount: 3
     rewards:
@@ -382,22 +314,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyDraugrElite
     tributeAmount: 3
     rewards:
@@ -420,22 +340,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyWraith
     tributeAmount: 1
     rewards:
@@ -457,22 +365,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyAbomination
     tributeAmount: 4
     rewards:
@@ -496,22 +392,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyBlob
     tributeAmount: 4
     rewards:
@@ -534,22 +418,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophySurtling
     tributeAmount: 1
     rewards:
@@ -571,22 +443,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
 - definitionForWildShrine: VF_wild_shrine_blue2
   wildShrineNameLocalization: $wild_shrine_mountain
   wildShrineRequestLocalization: $wild_shrine_mountain_request
@@ -615,22 +475,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyFenring
     tributeAmount: 2
     rewards:
@@ -652,22 +500,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophySGolem
     tributeAmount: 1
     rewards:
@@ -691,22 +527,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyHatchling
     tributeAmount: 3
     rewards:
@@ -729,22 +553,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyUlv
     tributeAmount: 3
     rewards:
@@ -767,22 +579,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyCultist
     tributeAmount: 3
     rewards:
@@ -805,22 +605,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
 - definitionForWildShrine: VF_wild_shrine_yellow1
   wildShrineNameLocalization: $wild_shrine_plains
   wildShrineRequestLocalization: $wild_shrine_plains_request
@@ -849,22 +637,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyGoblinShaman
     tributeAmount: 2
     rewards:
@@ -888,22 +664,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyGoblinBrute
     tributeAmount: 1
     rewards:
@@ -928,22 +692,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyGrowth
     tributeAmount: 2
     rewards:
@@ -967,22 +719,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
 - definitionForWildShrine: VF_wild_shrine_purple1
   wildShrineNameLocalization: $wild_shrine_mistlands
   wildShrineRequestLocalization: $wild_shrine_mistlands_request
@@ -1012,22 +752,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophySeeker
     tributeAmount: 3
     rewards:
@@ -1052,22 +780,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophySeekerBrute
     tributeAmount: 1
     rewards:
@@ -1092,22 +808,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyGjall
     tributeAmount: 3
     rewards:
@@ -1132,22 +836,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyTick
     tributeAmount: 2
     rewards:
@@ -1173,22 +865,10 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
   - tributeName: TrophyDvergr
     tributeAmount: 2
     rewards:
@@ -1215,20 +895,8 @@ wildShrines:
       excludeSelectMonsters: 
       commonSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       rareSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
       eliteSpawnModifiers:
         linearIncreaseRandomWaveAdjustment: true
-        linearIncreaseWaveAdjustment: false
-        linearDecreaseRandomWaveAdjustment: false
-        partialRandomWaveAdjustment: false
-        onlyGenerateInSecondHalf: false
 

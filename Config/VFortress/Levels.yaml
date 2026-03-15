@@ -3,7 +3,6 @@
 #################################################
 # levels:
 # - levelIndex: 1                                                  |- LevelIndex is the difficulty this wave is set at, valid values are 1+
-#   numPhases: 4                                                   |- The number of phases in this level, enemies will be distributed among the phases
 #   levelForShrineTypes:                                           |- What shrines will host this level, multiple definitions can be applied
 #     challenge: true                                              |-   Shrine of challenge will host this level
 #     arena: true                                                  |-   Shrine of the arena will host this level
@@ -13,15 +12,10 @@
 #   waveFormat: Tutorial                                           |- This is the format of the wave, formates are defined in WaveStyles.yaml, it determines how many creatures, what catagory and percentage of total points they use
 #   bossWaveFormat: TutorialBoss                                   |- This is the format if the wave is modified to be a boss wave
 #   maxCreatureFromPreviousBiomes: 0                               |- This is the maximum number of creatures that can be selected from prior biomes
-#   previousBiomeSearchRange: 1                                    |- How many previous biomes to look back for potential creatures
-#   chancePreviousBiomeCreatureSelected: 0.05                      |- Chance that a creature will be selected from a previous biome, if it can be
-#   previousBiomeCreaturesAddedStarPerBiome: true                  |- Automatically upgrades creatures from a previous biome, one star per biome difference (up to max defined stars)
 #   levelWarningLocalization: $shrine_warning_meadows              |- This is the announcement text that plays when the challenge starts as a normal wave, uses literal value if the localization does not exist
 #   bossLevelWarningLocalization: $shrine_warning_meadows_boss     |- This is the announcement text that plays when the challenge starts as a boss wave, localizations are available here https://github.com/MidnightsFX/Valheim_Fortress/blob/master/JotunnModStub/Localizations/English.json
 #   onlySelectMonsters: []                                         |- This is an array of monsters that are the only valid targets for this wave
 #   excludeSelectMonsters: []                                      |- This is an array of monsters that are to be avoided for the wave
-#   levelRewardOptionsLimitedTo:                                   |- When set, only the available rewards can be selected for this level, rewards still have their normal global key requirements
-#     - Coin                                                       |- The rewards entry name of rewards that should be available for this level
 #   commonSpawnModifiers:                                          |- Spawn modifiers are functions applied to each part of the wave, they can be different per catagory of monster
 #     linearIncreaseRandomWaveAdjustment: true                     |-   In general, it is best to only use one type of spawn modifier per creature type
 #     linearDecreaseRandomWaveAdjustment: false                    |- Linear Decrease/Increase will frontload or backload this creature in the various phase of the wave, meaning more of it will appear earlier or later depending on the modifier
@@ -39,1329 +33,645 @@
 #     onlyGenerateInSecondHalf: false
 #   uniqueSpawnModifiers: 
 levels:
-- levelName: 
-  levelIndex: 1
-  numPhases: 0
+- levelIndex: 1
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_meadow
   requiredGlobalKey: NONE
   biome: Meadows
   waveFormat: Tutorial
   bossWaveFormat: TutorialBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_meadows
   bossLevelWarningLocalization: $shrine_warning_meadows_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: []
   excludeSelectMonsters: []
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
     linearDecreaseRandomWaveAdjustment: false
     partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: false
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
     linearDecreaseRandomWaveAdjustment: false
     partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
     linearDecreaseRandomWaveAdjustment: false
     partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: false
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 2
-  numPhases: 0
+- levelIndex: 2
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_meadow
   requiredGlobalKey: NONE
   biome: Meadows
   waveFormat: Tutorial
   bossWaveFormat: TutorialBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_meadows
   bossLevelWarningLocalization: $shrine_warning_meadows_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   rareSpawnModifiers: 
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 3
-  numPhases: 0
+- levelIndex: 3
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_meadow
   requiredGlobalKey: NONE
   biome: Meadows
   waveFormat: Tutorial
   bossWaveFormat: TutorialBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_meadows
   bossLevelWarningLocalization: $shrine_warning_meadows_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   rareSpawnModifiers: 
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 4
-  numPhases: 0
+- levelIndex: 4
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_meadow
   requiredGlobalKey: NONE
   biome: Meadows
   waveFormat: Starter
   bossWaveFormat: TutorialBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_meadows
   bossLevelWarningLocalization: $shrine_warning_meadows_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   rareSpawnModifiers: 
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 5
-  numPhases: 0
+- levelIndex: 5
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_meadow
   requiredGlobalKey: NONE
   biome: Meadows
   waveFormat: Starter
   bossWaveFormat: TutorialBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_meadows
   bossLevelWarningLocalization: $shrine_warning_meadows_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   rareSpawnModifiers: 
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 6
-  numPhases: 0
+- levelIndex: 6
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_forest
   requiredGlobalKey: defeated_eikthyr
   biome: BlackForest
   waveFormat: Easy
   bossWaveFormat: EasyBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_forest
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 7
-  numPhases: 0
+- levelIndex: 7
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_forest
   requiredGlobalKey: defeated_eikthyr
   biome: BlackForest
   waveFormat: Normal
   bossWaveFormat: EasyBoss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_forest
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 8
-  numPhases: 0
+- levelIndex: 8
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_forest
   requiredGlobalKey: defeated_eikthyr
   biome: BlackForest
   waveFormat: Normal
   bossWaveFormat: Boss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_forest
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 9
-  numPhases: 0
+- levelIndex: 9
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_forest
   requiredGlobalKey: defeated_eikthyr
   biome: BlackForest
   waveFormat: Normal
   bossWaveFormat: Boss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_forest
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers: 
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 10
-  numPhases: 0
+- levelIndex: 10
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_forest
   requiredGlobalKey: defeated_eikthyr
   biome: BlackForest
   waveFormat: Hard
   bossWaveFormat: Boss
   maxCreatureFromPreviousBiomes: 0
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_forest
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 11
-  numPhases: 0
+- levelIndex: 11
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_swamp
   requiredGlobalKey: defeated_gdking
   biome: Swamp
   waveFormat: Easy
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_swamp
   bossLevelWarningLocalization: $shrine_warning_swamp_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 12
-  numPhases: 0
+- levelIndex: 12
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_swamp
   requiredGlobalKey: defeated_gdking
   biome: Swamp
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_swamp
   bossLevelWarningLocalization: $shrine_warning_swamp_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 13
-  numPhases: 0
+- levelIndex: 13
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_swamp
   requiredGlobalKey: defeated_gdking
   biome: Swamp
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_swamp
   bossLevelWarningLocalization: $shrine_warning_swamp_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 14
-  numPhases: 0
+- levelIndex: 14
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_swamp
   requiredGlobalKey: defeated_gdking
   biome: Swamp
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_swamp
   bossLevelWarningLocalization: $shrine_warning_swamp_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 15
-  numPhases: 0
+- levelIndex: 15
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_swamp
   requiredGlobalKey: defeated_gdking
   biome: Swamp
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_swamp
   bossLevelWarningLocalization: $shrine_warning_swamp_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 16
-  numPhases: 0
+- levelIndex: 16
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mountain
   requiredGlobalKey: defeated_bonemass
   biome: Mountain
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mountain
   bossLevelWarningLocalization: $shrine_warning_mountain_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 17
-  numPhases: 0
+- levelIndex: 17
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mountain
   requiredGlobalKey: defeated_bonemass
   biome: Mountain
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mountain
   bossLevelWarningLocalization: $shrine_warning_mountain_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 18
-  numPhases: 0
+- levelIndex: 18
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mountain
   requiredGlobalKey: defeated_bonemass
   biome: Mountain
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mountain
   bossLevelWarningLocalization: $shrine_warning_mountain_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 19
-  numPhases: 0
+- levelIndex: 19
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mountain
   requiredGlobalKey: defeated_bonemass
   biome: Mountain
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mountain
   bossLevelWarningLocalization: $shrine_warning_mountain_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 20
-  numPhases: 0
+- levelIndex: 20
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mountain
   requiredGlobalKey: defeated_bonemass
   biome: Mountain
   waveFormat: Expert
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mountain
   bossLevelWarningLocalization: $shrine_warning_mountain_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 21
-  numPhases: 0
+- levelIndex: 21
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_plains
   requiredGlobalKey: defeated_dragon
   biome: Plains
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_plains
   bossLevelWarningLocalization: $shrine_warning_plains_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 22
-  numPhases: 0
+- levelIndex: 22
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_plains
   requiredGlobalKey: defeated_dragon
   biome: Plains
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_plains
   bossLevelWarningLocalization: $shrine_warning_plains_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 23
-  numPhases: 0
+- levelIndex: 23
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_plains
   requiredGlobalKey: defeated_dragon
   biome: Plains
   waveFormat: VeryHard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_plains
   bossLevelWarningLocalization: $shrine_warning_plains_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 24
-  numPhases: 0
+- levelIndex: 24
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_plains
   requiredGlobalKey: defeated_dragon
   biome: Plains
   waveFormat: Normal
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_plains
   bossLevelWarningLocalization: $shrine_warning_plains_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 25
-  numPhases: 0
+- levelIndex: 25
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_plains
   requiredGlobalKey: defeated_dragon
   biome: Plains
-  waveFormat: Expert
+  waveFormat: Extreme
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_plains
   bossLevelWarningLocalization: $shrine_warning_plains_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 26
-  numPhases: 0
+- levelIndex: 26
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mistland
   requiredGlobalKey: defeated_goblinking
   biome: Mistlands
   waveFormat: Hard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mistlands
   bossLevelWarningLocalization: $shrine_warning_mistlands_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 27
-  numPhases: 0
+- levelIndex: 27
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mistland
   requiredGlobalKey: defeated_goblinking
   biome: Mistlands
   waveFormat: VeryHard
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mistlands
   bossLevelWarningLocalization: $shrine_warning_mistlands_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 28
-  numPhases: 0
+- levelIndex: 28
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mistland
   requiredGlobalKey: defeated_goblinking
   biome: Mistlands
   waveFormat: Expert
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mistlands
   bossLevelWarningLocalization: $shrine_warning_mistlands_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 29
-  numPhases: 0
+- levelIndex: 29
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mistland
   requiredGlobalKey: defeated_goblinking
   biome: Mistlands
   waveFormat: Extreme
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mistlands
   bossLevelWarningLocalization: $shrine_warning_mistlands_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 30
-  numPhases: 0
+- levelIndex: 30
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_mistland
   requiredGlobalKey: defeated_goblinking
   biome: Mistlands
   waveFormat: Dynamic
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_mistlands
   bossLevelWarningLocalization: $shrine_warning_mistlands_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters: 
   excludeSelectMonsters: 
   commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
+    linearDecreaseRandomWaveAdjustment: true
   rareSpawnModifiers:
     linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
   eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
     onlyGenerateInSecondHalf: true
   uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 31
-  numPhases: 0
+- levelIndex: 9
   levelForShrineTypes:
-    Challenge: true
-    Arena: true
-  levelMenuLocalization: $shrine_menu_ashland
-  requiredGlobalKey: defeated_fader
-  biome: AshLands
-  waveFormat: Hard
-  bossWaveFormat: DynamicBoss
-  maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
-  levelWarningLocalization: $shrine_warning_ashlands
-  bossLevelWarningLocalization: $shrine_warning_ashlands_boss
-  levelRewardOptionsLimitedTo: 
-  onlySelectMonsters: 
-  excludeSelectMonsters: 
-  commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  rareSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: true
-  uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 32
-  numPhases: 0
-  levelForShrineTypes:
-    Challenge: true
-    Arena: true
-  levelMenuLocalization: $shrine_menu_ashland
-  requiredGlobalKey: defeated_fader
-  biome: AshLands
-  waveFormat: VeryHard
-  bossWaveFormat: DynamicBoss
-  maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
-  levelWarningLocalization: $shrine_warning_ashlands
-  bossLevelWarningLocalization: $shrine_warning_ashlands_boss
-  levelRewardOptionsLimitedTo: 
-  onlySelectMonsters: 
-  excludeSelectMonsters: 
-  commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  rareSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: true
-  uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 33
-  numPhases: 0
-  levelForShrineTypes:
-    Challenge: true
-    Arena: true
-  levelMenuLocalization: $shrine_menu_ashland
-  requiredGlobalKey: defeated_fader
-  biome: AshLands
-  waveFormat: Expert
-  bossWaveFormat: DynamicBoss
-  maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
-  levelWarningLocalization: $shrine_warning_ashlands
-  bossLevelWarningLocalization: $shrine_warning_ashlands_boss
-  levelRewardOptionsLimitedTo: 
-  onlySelectMonsters: 
-  excludeSelectMonsters: 
-  commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  rareSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: true
-  uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 34
-  numPhases: 0
-  levelForShrineTypes:
-    Challenge: true
-    Arena: true
-  levelMenuLocalization: $shrine_menu_ashland
-  requiredGlobalKey: defeated_fader
-  biome: AshLands
-  waveFormat: Extreme
-  bossWaveFormat: DynamicBoss
-  maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
-  levelWarningLocalization: $shrine_warning_ashlands
-  bossLevelWarningLocalization: $shrine_warning_ashlands_boss
-  levelRewardOptionsLimitedTo: 
-  onlySelectMonsters: 
-  excludeSelectMonsters: 
-  commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  rareSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: true
-  uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 35
-  numPhases: 0
-  levelForShrineTypes:
-    Challenge: true
-    Arena: true
-  levelMenuLocalization: $shrine_menu_ashland
-  requiredGlobalKey: defeated_fader
-  biome: AshLands
-  waveFormat: Dynamic
-  bossWaveFormat: DynamicBoss
-  maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
-  levelWarningLocalization: $shrine_warning_ashlands
-  bossLevelWarningLocalization: $shrine_warning_ashlands_boss
-  levelRewardOptionsLimitedTo: 
-  onlySelectMonsters: 
-  excludeSelectMonsters: 
-  commonSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  rareSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: true
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: false
-  eliteSpawnModifiers:
-    linearIncreaseRandomWaveAdjustment: false
-    linearIncreaseWaveAdjustment: false
-    linearDecreaseRandomWaveAdjustment: false
-    partialRandomWaveAdjustment: false
-    onlyGenerateInSecondHalf: true
-  uniqueSpawnModifiers: 
-- levelName: 
-  levelIndex: 9
-  numPhases: 0
-  levelForShrineTypes:
-    Challenge: false
-    Arena: true
+    challenge: true
+    arena: true
   levelMenuLocalization: $shrine_menu_troll_level
   requiredGlobalKey: KilledTroll
   biome: BlackForest
   waveFormat: ElitesOnly
   bossWaveFormat: DynamicBoss
   maxCreatureFromPreviousBiomes: 1
-  previousBiomeSearchRange: 0
-  chancePreviousBiomeCreatureSelected: 0
-  previousBiomeCreaturesAddedStarPerBiome: false
   levelWarningLocalization: $shrine_warning_trolls
   bossLevelWarningLocalization: $shrine_warning_forest_boss
-  levelRewardOptionsLimitedTo: 
   onlySelectMonsters:
   - Troll
   excludeSelectMonsters: 

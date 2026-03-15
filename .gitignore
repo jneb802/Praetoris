@@ -2,8 +2,6 @@
 CLAUDE.md
 *.zip
 .DS_Store
-dev/
-.env.dev
 
 # Config/ — local/personal files that shouldn't be deployed
 Config/BepInEx.cfg

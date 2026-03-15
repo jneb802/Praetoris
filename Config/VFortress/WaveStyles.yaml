@@ -111,14 +111,6 @@ waveFormats:
       spawnPercentage: 25
     - spawnType: rare
       spawnPercentage: 25
-  CommonOnly:
-    waveFormats:
-    - spawnType: common
-      spawnPercentage: 25
-    - spawnType: common
-      spawnPercentage: 25
-    - spawnType: common
-      spawnPercentage: 25
   TutorialBoss:
     waveFormats:
     - spawnType: unique

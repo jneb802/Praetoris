@@ -107,7 +107,7 @@ creatures:
     prefabName: Leech
     spawnType: common
     biome: Swamp
-    enabled: false
+    enabled: true
     dropsEnabled: false
   Wraith:
     spawnCost: 10
@@ -319,69 +319,6 @@ creatures:
     biome: Mistlands
     enabled: true
     dropsEnabled: false
-  Asksvin:
-    spawnCost: 70
-    prefabName: Asksvin
-    spawnType: rare
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Charred_Archer:
-    spawnCost: 60
-    prefabName: Charred_Archer
-    spawnType: common
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Charred_Twitcher:
-    spawnCost: 45
-    prefabName: Charred_Twitcher
-    spawnType: common
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Charred_Mage:
-    spawnCost: 100
-    prefabName: Charred_Mage
-    spawnType: elite
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Charred_Melee:
-    spawnCost: 75
-    prefabName: Charred_Melee
-    spawnType: rare
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  FallenValkyrie:
-    spawnCost: 100
-    prefabName: FallenValkyrie
-    spawnType: elite
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  BlobLava:
-    spawnCost: 75
-    prefabName: BlobLava
-    spawnType: rare
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Morgen:
-    spawnCost: 85
-    prefabName: Morgen
-    spawnType: elite
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
-  Volture:
-    spawnCost: 30
-    prefabName: Volture
-    spawnType: common
-    biome: AshLands
-    enabled: true
-    dropsEnabled: false
   Eikthyr:
     spawnCost: 40
     prefabName: Eikthyr
@@ -422,13 +359,6 @@ creatures:
     prefabName: SeekerQueen
     spawnType: unique
     biome: Mistlands
-    enabled: true
-    dropsEnabled: false
-  Fader:
-    spawnCost: 800
-    prefabName: Fader
-    spawnType: unique
-    biome: AshLands
     enabled: true
     dropsEnabled: false
 
