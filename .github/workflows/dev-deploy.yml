@@ -1,0 +1,45 @@
+name: Dev Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Stop Valheim server
+        run: |
+          echo "Stopping Valheim server..."
+          sudo systemctl stop valheim
+
+      - name: Install mods via tcli
+        run: |
+          chmod +x scripts/install-mods.sh
+          ./scripts/install-mods.sh manifest.json server-mods.json
+
+      - name: Sync configs to server
+        run: |
+          BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
+          echo "Syncing configs to $BEPINEX_CONFIG..."
+          rsync -rv --delete --exclude 'RustyMods.DiscordBot.cfg' Config/ "$BEPINEX_CONFIG/"
+          echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
+
+      - name: Start Valheim server
+        run: |
+          echo "Starting Valheim server..."
+          sudo systemctl start valheim
+          echo "Waiting 30s for server to initialize..."
+          sleep 30
+          sudo systemctl status valheim --no-pager || echo "::warning::Server may not have started correctly"
