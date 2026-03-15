@@ -21,11 +21,16 @@ Config/         # BepInEx config files shipped to players
 
 ## Versioning
 
-Each release is a git tag (e.g. `v1.1.15`). `main` always reflects what is currently live on the server.
+Format: `<season>.<major>.<patch>` — e.g. `1.1.15` = season 1, major 1, patch 15. `2.0.0` = season 2 launch.
 
-- `git tag` — list all releases
-- `git diff v1.1.15..v1.2.0` — see what changed between versions
-- `git checkout v1.1.15` — view the exact state of a past release
+`main` always reflects what is live on the server. All changes go through work branches and PRs. Each release is tagged (e.g. `v1.1.15`).
+
+```
+git tag                              # list all releases
+git tag -l "v1.*"                    # all season 1 releases
+git diff v1.1.15..v2.0.0            # see what changed between versions
+git log v1.0.0..v1.1.15 --oneline   # every change across season 1
+```
 
 ## Publishing
 
