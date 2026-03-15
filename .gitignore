@@ -10,3 +10,5 @@ Config/com.maxsch.valheim.vnei.blacklist.txt
 Config/Hunter_Legacy.*.yml
 Config/Magic_Supremacy.*.yml
 Config/**/localizations/
+Config/warpalicious.ValTicket.cfg
+Config/warpalicious.worldGenAccelerator.cfg
