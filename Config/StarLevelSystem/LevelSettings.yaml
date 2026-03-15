@@ -1,0 +1,199 @@
+#################################################
+# Star Level System Expanded - Level Settings
+#################################################
+
+biomeConfiguration:
+  All:
+    distanceScaleModifier: 1.5
+    spawnRateModifier: 1.1
+    damageRecievedModifiers:
+      Poison: 1.5
+    nightSettings:
+      nightLevelUpChanceScaler: 1.5
+  Meadows:
+    biomeMaxLevelOverride: 4
+  BlackForest:
+    biomeMaxLevelOverride: 6
+  Swamp:
+    biomeMaxLevelOverride: 10
+  Mountain:
+    biomeMaxLevelOverride: 14
+  Plains:
+    biomeMaxLevelOverride: 18
+  Mistlands:
+    biomeMaxLevelOverride: 22
+  AshLands:
+    biomeMaxLevelOverride: 26
+    distanceScaleModifier: 0.5
+  DeepNorth:
+    biomeMaxLevelOverride: 26
+    distanceScaleModifier: 0.5
+creatureConfiguration:
+  piece_TrainingDummy:
+    customCreatureLevelUpChance:
+      1: 100
+      2: 100
+      3: 0
+    creatureMaxLevelOverride: 11
+    requiredModifiers: 
+    spawnRateModifier: 1
+    creatureBaseValueModifiers:
+      BaseHealth: 1.05
+      BaseDamage: 0.95
+      Speed: 1.05
+      Size: 1.05
+      AttackSpeed: 1.05
+    creaturePerLevelValueModifiers:
+      HealthPerLevel: 0.3
+      DamagePerLevel: 0.05
+      SizePerLevel: 0.005
+  Lox:
+    requiredModifiers: 
+    spawnRateModifier: 1
+    creaturePerLevelValueModifiers:
+      SpeedPerLevel: -0.01
+  Troll:
+    requiredModifiers: 
+    spawnRateModifier: 1
+    creaturePerLevelValueModifiers:
+      SizePerLevel: 0.05
+  Bjorn:
+    requiredModifiers: 
+    spawnRateModifier: 1
+    creaturePerLevelValueModifiers:
+      SizePerLevel: 0.05
+defaultCreatureLevelUpChance:
+  1: 20
+  2: 10
+  3: 5
+  4: 2
+  5: 1
+  6: 0.5
+  7: 0.25
+  8: 0.125
+  9: 0.0625
+  10: 0.0312
+  11: 0.0156
+  12: 0.0078
+  13: 0.0039
+  14: 0.0019
+  15: 0.0015
+  16: 0.001
+  17: 0.0009
+  18: 0.0008
+  19: 0.0007
+  20: 0.0006
+  21: 0.0005
+  22: 0.0004
+  23: 0.0003
+  24: 0.0002
+  25: 0.0001
+enableDistanceLevelBonus: true
+distanceLevelBonus:
+  750:
+    1: 15
+    2: 5
+    3: 1
+  1200:
+    1: 18
+    2: 7
+    3: 1.5
+    4: 0.5
+  2000:
+    1: 24
+    2: 10
+    3: 3
+    4: 1
+    5: 0.5
+  3000:
+    1: 32
+    2: 16
+    3: 8
+    4: 4
+    5: 2
+    6: 1
+  4000:
+    1: 40
+    2: 25
+    3: 12
+    4: 6
+    5: 3
+    6: 2
+    7: 1
+    8: 0.5
+  5000:
+    1: 50
+    2: 35
+    3: 18
+    4: 9
+    5: 6
+    6: 3
+    7: 2
+    8: 1
+    9: 0.5
+    10: 0.25
+  6000:
+    1: 60
+    2: 40
+    3: 20
+    4: 10
+    5: 8
+    6: 6
+    7: 4
+    8: 2
+    9: 1
+    10: 0.5
+    11: 0.25
+    12: 0.12
+  7000:
+    1: 70
+    2: 50
+    3: 25
+    4: 12
+    5: 10
+    6: 8
+    7: 6
+    8: 4
+    9: 2
+    10: 1
+    11: 0.5
+    12: 0.25
+    13: 0.12
+    14: 0.06
+  8000:
+    1: 80
+    2: 60
+    3: 40
+    4: 20
+    5: 15
+    6: 12
+    7: 10
+    8: 8
+    9: 6
+    10: 4
+    11: 2
+    12: 1
+    13: 0.5
+    14: 0.25
+    15: 0.12
+    16: 0.06
+  9100:
+    1: 100
+    2: 80
+    3: 60
+    4: 40
+    5: 30
+    6: 20
+    7: 16
+    8: 14
+    9: 12
+    10: 10
+    11: 8
+    12: 4
+    13: 2
+    14: 1
+    15: 0.5
+    16: 0.25
+    17: 0.12
+    18: 0.06
+

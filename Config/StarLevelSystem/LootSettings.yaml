@@ -1,0 +1,71 @@
+#################################################
+# Star Level System Expanded - Creature loot configuration
+#################################################
+
+characterSpecificLoot:
+  BlobElite:
+  - drop:
+      prefab: Ooze
+      min: 2
+      max: 3
+    amountScaleFactor: 0.5
+  - drop:
+      prefab: IronScrap
+      chance: 0.33
+    amountScaleFactor: 0.2
+  - drop:
+      prefab: TrophyBlob
+      chance: 0.1
+    chanceScaleFactor: 0.01
+    maxScaledAmount: 1
+  - drop:
+      prefab: Blob
+      min: 2
+      max: 2
+    amountScaleFactor: 0.5
+    maxScaledAmount: 6
+  Tick:
+  - drop:
+      prefab: GiantBloodSack
+    amountScaleFactor: 0.5
+  - drop:
+      prefab: TrophyTick
+      chance: 0.05
+    chanceScaleFactor: 0.01
+    maxScaledAmount: 1
+nonCharacterSpecificLoot:
+  caverock_ice_stalagtite_falling:
+  - drop:
+      prefab: Crystal
+      max: 3
+      chance: 0.3
+      dontScale: true
+  EvilHeart_Forest:
+  - drop:
+      prefab: AncientSeed
+      onePerPlayer: true
+    maxScaledAmount: 3
+enableDistanceLootModifier: true
+distanceLootModifier:
+  1250:
+    minAmountScaleFactorBonus: 0.02
+    maxAmountScaleFactorBonus: 0.02
+  2500:
+    minAmountScaleFactorBonus: 0.05
+    maxAmountScaleFactorBonus: 0.05
+  3750:
+    minAmountScaleFactorBonus: 0.08
+    maxAmountScaleFactorBonus: 0.08
+  5000:
+    minAmountScaleFactorBonus: 0.12
+    maxAmountScaleFactorBonus: 0.12
+  6250:
+    minAmountScaleFactorBonus: 0.15
+    maxAmountScaleFactorBonus: 0.15
+  7500:
+    minAmountScaleFactorBonus: 0.2
+    maxAmountScaleFactorBonus: 0.2
+  8750:
+    minAmountScaleFactorBonus: 0.35
+    maxAmountScaleFactorBonus: 0.35
+

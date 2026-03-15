@@ -1,0 +1,151 @@
+#################################################
+# Star Level System Expanded - Creature Modifier Configuration
+#################################################
+
+modifierGlobalSettings:
+  globalIgnorePrefabList:
+  - piece_TrainingDummy
+majorModifiers:
+  Brutal:
+    selectionWeight: 10
+    config:
+      basePower: 0.07
+    unallowedCreatures: &o0
+    - Deer
+    - Hare
+    - Chicken
+    - Hen
+  Fire:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.01
+      basePower: 0.3
+    unallowedCreatures: *o0
+  Frost:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.01
+      basePower: 0.3
+    unallowedCreatures: *o0
+  Poison:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.05
+      basePower: 1
+    unallowedCreatures: *o0
+  Lightning:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.05
+      basePower: 0.3
+    unallowedCreatures: *o0
+  Splitter:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.1
+      basePower: 2
+  SoulEater:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.05
+    unallowedCreatures: *o0
+  ResistPierce:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.02
+      basePower: 0.5
+  ResistSlash:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.02
+      basePower: 0.5
+  ResistBlunt:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.02
+      basePower: 0.5
+minorModifiers:
+  FireNova:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.1
+      basePower: 2
+    unallowedCreatures: *o0
+  Lootbags:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.2
+      basePower: 2
+  Alert:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.05
+      basePower: 2
+  Big:
+    selectionWeight: 10
+    config:
+      basePower: 0.3
+  Fast:
+    selectionWeight: 10
+    config:
+      basePower: 0.2
+  StaminaDrain:
+    selectionWeight: 10
+    config:
+      perlevelPower: 2
+      basePower: 3
+    unallowedCreatures: *o0
+  EitrDrain:
+    selectionWeight: 10
+    config:
+      perlevelPower: 4
+      basePower: 10
+    unallowedCreatures: *o0
+    allowedBiomes:
+    - Mistlands
+    - AshLands
+bossModifiers:
+  BossSummoner:
+    selectionWeight: 10
+    config:
+      perlevelPower: 120
+      basePower: 10
+      biomeObjects:
+        Meadows:
+        - Greyling
+        BlackForest:
+        - Greydwarf_Shaman
+        Swamp:
+        - BlobElite
+        Mountain:
+        - Hatchling
+        Plains:
+        - Goblin
+        - GoblinShaman
+        - GoblinBrute
+        Mistlands:
+        - SeekerBrute
+        - Seeker
+        AshLands:
+        - Charred_Archer
+        - Charred_Melee
+  SoulEater:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.01
+  LifeLink:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.02
+      basePower: 0.7
+  ResistPierce:
+    selectionWeight: 10
+    config:
+      perlevelPower: 0.02
+      basePower: 0.25
+  Brutal:
+    selectionWeight: 10
+    config:
+      basePower: 0.05
+    unallowedCreatures: *o0
+
