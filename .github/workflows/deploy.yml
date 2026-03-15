@@ -1,0 +1,102 @@
+name: Deploy & Publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract version from manifest.json
+        id: version
+        run: |
+          VERSION=$(jq -r '.version_number' manifest.json)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "::notice::Deploying Praetoris v$VERSION"
+
+      - name: Stop Valheim server
+        run: |
+          echo "Stopping Valheim server..."
+          sudo systemctl stop valheim
+
+      - name: Install mods via tcli
+        run: |
+          chmod +x scripts/install-mods.sh
+          ./scripts/install-mods.sh manifest.json
+
+      - name: Sync configs to server
+        run: |
+          BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
+          echo "Syncing configs to $BEPINEX_CONFIG..."
+          rsync -av --delete Config/ "$BEPINEX_CONFIG/"
+          echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
+
+      - name: Start Valheim server
+        run: |
+          echo "Starting Valheim server..."
+          sudo systemctl start valheim
+          echo "Waiting 30s for server to initialize..."
+          sleep 30
+          sudo systemctl status valheim --no-pager || echo "::warning::Server may not have started correctly"
+
+  publish:
+    runs-on: self-hosted
+    needs: deploy
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract version
+        id: version
+        run: |
+          VERSION=$(jq -r '.version_number' manifest.json)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Build Thunderstore package
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          zip -r "Praetoris-${VERSION}.zip" \
+            manifest.json icon.png README.md CHANGELOG.md Config/
+          echo "::notice::Built Praetoris-${VERSION}.zip ($(du -h Praetoris-${VERSION}.zip | cut -f1))"
+
+      - name: Publish to Thunderstore
+        env:
+          TCLI_AUTH_TOKEN: ${{ secrets.THUNDERSTORE_TOKEN }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          echo "Publishing Praetoris v${VERSION} to Thunderstore..."
+          tcli publish \
+            --file "Praetoris-${VERSION}.zip" \
+            --repository https://thunderstore.io \
+            --package-namespace warpalicious \
+            --package-name Praetoris \
+            --package-version "${VERSION}"
+
+  tag:
+    runs-on: self-hosted
+    needs: publish
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract version
+        id: version
+        run: |
+          VERSION=$(jq -r '.version_number' manifest.json)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Create and push tag
+        run: |
+          TAG="v${{ steps.version.outputs.version }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "::warning::Tag $TAG already exists, skipping"
+          else
+            git tag "$TAG"
+            git push origin "$TAG"
+            echo "::notice::Created tag $TAG"
+          fi

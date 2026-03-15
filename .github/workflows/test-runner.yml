@@ -1,0 +1,67 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: System info
+        run: |
+          echo "=== User ==="
+          whoami
+          echo ""
+          echo "=== OS ==="
+          uname -a
+          cat /etc/os-release | head -5
+          echo ""
+          echo "=== Resources ==="
+          free -h | head -2
+          df -h / | tail -1
+
+      - name: Check required tools
+        run: |
+          echo "=== tcli ==="
+          tcli --version || echo "MISSING: tcli not found"
+          echo ""
+          echo "=== jq ==="
+          jq --version || echo "MISSING: jq not found"
+          echo ""
+          echo "=== zip ==="
+          zip --version | head -2 || echo "MISSING: zip not found"
+          echo ""
+          echo "=== rsync ==="
+          rsync --version | head -1 || echo "MISSING: rsync not found"
+          echo ""
+          echo "=== git ==="
+          git --version
+
+      - name: Check Valheim server paths
+        run: |
+          VALHEIM_DIR="/home/valheim/server"
+          BEPINEX_CONFIG="$VALHEIM_DIR/BepInEx/config"
+          BEPINEX_PLUGINS="$VALHEIM_DIR/BepInEx/plugins"
+
+          echo "=== Valheim directory ==="
+          ls -la "$VALHEIM_DIR" 2>/dev/null || echo "NOT FOUND: $VALHEIM_DIR"
+          echo ""
+          echo "=== BepInEx config ==="
+          ls "$BEPINEX_CONFIG" 2>/dev/null | head -5 || echo "NOT FOUND: $BEPINEX_CONFIG"
+          echo ""
+          echo "=== BepInEx plugins ==="
+          ls "$BEPINEX_PLUGINS" 2>/dev/null | head -5 || echo "NOT FOUND: $BEPINEX_PLUGINS"
+
+      - name: Check sudoers for Valheim service
+        run: |
+          sudo systemctl status valheim --no-pager 2>&1 || echo "Service not found or sudoers not configured"
+
+      - name: Check Thunderstore token
+        env:
+          TCLI_AUTH_TOKEN: ${{ secrets.THUNDERSTORE_TOKEN }}
+        run: |
+          if [ -n "$TCLI_AUTH_TOKEN" ]; then
+            echo "THUNDERSTORE_TOKEN secret is set"
+          else
+            echo "WARNING: THUNDERSTORE_TOKEN secret is NOT set"
+          fi
