@@ -24,7 +24,7 @@ jobs:
           echo "Stopping Valheim server..."
           sudo systemctl stop valheim
 
-      - name: Install mods via tcli
+      - name: Install mods
         run: |
           chmod +x scripts/install-mods.sh
           ./scripts/install-mods.sh manifest.json server-mods.json
@@ -33,8 +33,13 @@ jobs:
         run: |
           BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
           echo "Syncing configs to $BEPINEX_CONFIG..."
-          rsync -rv --delete --exclude 'RustyMods.DiscordBot.cfg' --exclude 'DiscordBot/' Config/ "$BEPINEX_CONFIG/"
+          rsync -rv --delete --exclude 'RustyMods.DiscordBot.cfg' --exclude 'DiscordBot/' --exclude 'AzuAntiCheat_Whitelist/' --exclude 'AzuAntiCheat_Greylist/' Config/ "$BEPINEX_CONFIG/"
           echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
+
+      - name: Sync AzuAntiCheat whitelist and greylist
+        run: |
+          chmod +x scripts/sync-anticheat-lists.sh
+          ./scripts/sync-anticheat-lists.sh manifest.json greylist.json
 
       - name: Start Valheim server
         run: |
