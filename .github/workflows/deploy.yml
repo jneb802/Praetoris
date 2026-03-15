@@ -22,6 +22,13 @@ jobs:
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           echo "::notice::Deploying Praetoris v$VERSION"
 
+      - name: Announce restart countdown
+        env:
+          RCON_PASSWORD: ${{ secrets.RCON_PASSWORD }}
+        run: |
+          chmod +x scripts/announce-restart.sh
+          ./scripts/announce-restart.sh
+
       - name: Stop Valheim server
         run: |
           echo "Stopping Valheim server..."
