@@ -78,11 +78,19 @@ for json_file in "$@"; do
     rm -rf "$mod_dir"
     mkdir -p "$mod_dir"
 
-    # Copy plugin DLLs (from plugins/ subdir and root)
+    # Copy plugin files (from plugins/ subdir and root)
     if [ -d "$extract_dir/plugins" ]; then
       cp -r "$extract_dir/plugins/"* "$mod_dir/" 2>/dev/null || true
     fi
     find "$extract_dir" -maxdepth 1 -name "*.dll" -exec cp {} "$mod_dir/" \;
+
+    # Flatten nested Bundles/ directories (MWL_AIO and similar mods
+    # ship asset bundles inside plugins/Bundles/ but expect them as
+    # siblings to the DLL at runtime)
+    if [ -d "$mod_dir/Bundles" ]; then
+      mv "$mod_dir/Bundles/"* "$mod_dir/" 2>/dev/null || true
+      rmdir "$mod_dir/Bundles" 2>/dev/null || true
+    fi
 
     # Copy patchers if present
     if [ -d "$extract_dir/patchers" ]; then
