@@ -1,0 +1,10 @@
+timezone: UTC
+interval: 10
+jobs: []
+zone: []
+join: []
+logJobs: true
+logZone: true
+logJoin: true
+logSkipped: true
+discordConnector: true

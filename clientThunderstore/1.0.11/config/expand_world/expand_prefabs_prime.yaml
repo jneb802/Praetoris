@@ -1,8 +1,0 @@
-- prefab: Ghost
-  type: destroy
-  spawns:
-  - Coal
-- prefab: TentaRoot
-  type: destroy
-  spawns:
-  - FineWood

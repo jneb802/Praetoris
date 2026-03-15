@@ -1,0 +1,14 @@
+name: AntlerStew_warp
+clonePrefabName: AntlerStew_warp
+craftingStation: $piece_cauldron
+minStationLevel: 1
+maxStationLevelCap: 
+repairStation: 
+amount: 2
+disabled: false
+requireOnlyOneIngredient: false
+reqs:
+- DeerMeat:3:1:True
+- WolfMeat:2:1:True
+- MeadStaminaMinor:1:1:True
+- CoppedVeggies_warp:1:1:True

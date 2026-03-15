@@ -1,0 +1,63 @@
+{
+  "TargetFile": "enchantcosts.json", 
+  "Author": "Majestic",
+  "RequireAll": true, 
+  "Patches": [
+	{
+		"Path": "$.DisenchantProducts",
+		"Action": "AppendAll", 
+		"Value": [
+        {
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_fox_TW", "$trophy_blackbear_TW", "$trophy_razorback_TW" ],
+			"Products" : [ { "Item": "ShardMagic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_crawler_TW", "$trophy_rottingelk_TW", "$trophy_grizzlybear_TW" ],
+			"Products" : [ { "Item": "ShardRare", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_obsidiangolem_TW", "$trophy_prowler_TW" ],
+			"Products" : [ { "Item": "ShardEpic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_ashenwarg_TW", "$trophy_ashencrab_TW", "$trophy_ashenscorpid_TW", "$trophy_ashendrake_TW", "$trophy_ashenimp_TW", "$trophy_ashendemon_TW", "$trophy_ashenminotaur_TW", "$trophy_arcticwolf_TW", "$trophy_arcticfenring_TW", "$trophy_arcticserpent_TW", "$trophy_arcticbear_TW", "$trophy_arcticdrake_TW","$trophy_ashenshark_TW"],
+			"Products" : [ { "Item": "ShardEpic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_ashendimetrodon_TW", "$trophy_ashengolem_TW", "$trophy_arcticfenringcultist_TW", "$trophy_arcticmammoth_TW","$trophy_arcticcultist_TW", "$trophy_arcticgolem_TW", "$trophy_jotunnbrute_TW", "$trophy_jotunncrusher_TW" ],
+			"Products" : [ { "Item": "ShardLegendary", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_asmodeus_TW" ],
+			"Products" : [ { "Item": "RunestoneMagic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_svalt_TW" ],
+			"Products" : [ { "Item": "RunestoneRare", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_vrykolathas_TW" ],
+			"Products" : [ { "Item": "RunestoneEpic", "Amount": 1 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_sythrak_TW" ],
+			"Products" : [ { "Item": "RunestoneLegendary", "Amount": 12 } ]
+		},
+		{
+			"ItemTypes" : [ "Trophy" ],
+			"ItemNames" : [ "$trophy_stormherald_TW" ],
+			"Products" : [ { "Item": "RunestoneLegendary", "Amount": 12 } ]
+		}
+	  ]
+	}
+  ]
+}

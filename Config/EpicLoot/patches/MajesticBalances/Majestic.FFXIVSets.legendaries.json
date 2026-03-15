@@ -1,0 +1,671 @@
+{
+  "TargetFile": "legendaries.json",
+  "Author": "Majestic",
+  "RequireAll": true,
+  "Patches": [
+    {
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "OdinsShield",
+      "Name": "Odins Sturdy Shield",
+      "Description": "Odins Shield",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Shield"
+        ],
+        "ItemHasParryPower": true
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "OdinsWeapon",
+      "Name": "Odins Durable Weapon",
+      "Description": "Odins Sword",
+      "IsSetItem": true,
+      "Requirements": {
+        "AllowedItemTypes": [ "OneHandedWeapon" ],
+        "AllowedSkillTypes": [ "Swords", "Spears" ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "OdinsLegs",
+      "Name": "Odins Dense Legs",
+      "Description": "Odins Legs",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Legs"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "PheonixFeathers",
+      "Name": "Pheonix Feathers",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemNames": [
+          "$item_cape_feather"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 3
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "SephirothsCape",
+      "Name": "Sephiroths Cloak",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Shoulder"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "SephirothsWeapon",
+      "Name": "Sephiroths Deadly Weapon",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [ "OneHandedWeapon", "Bow", "TwoHandedWeapon" ], 
+        "AllowedSkillTypes": [ "Knives", "Bows", "Unarmed" ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "SephirothsRing",
+      "Name": "Sephiroths Ultima Ring",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemNames": [
+          "$mod_epicloot_assets_silverring"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "TitansFists",
+      "Name": "Titans Fists",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [ "TwoHandedWeapon" ],
+        "AllowedSkillTypes": [ "Unarmed" ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "TitansBelt",
+      "Name": "Titans Mighty Belt",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemNames" : [
+          "$mod_epicloot_assets_leatherbelt"
+        ]
+	  },  
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "TitansLeggings",
+      "Name": "Titans Sturdy Leggings",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Legs"
+        ]
+      },  
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "ExDeathHelm",
+      "Name": "ExDeaths Helmet",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Helmet"
+        ]
+      },  
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ExDeathStaff",
+      "Name": "ExDeaths Powerful Staff",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Staff"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ExDeathCape",
+      "Name": "ExDeaths Magical Cape",
+      "Description": "",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Shoulder"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "AnimasBelt",
+      "Name": "Animas Belt",
+      "Description": "As simple as can be.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemNames" : [
+          "$mod_epicloot_assets_leatherbelt"
+        ]
+	  },  
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "AnimasChest",
+      "Name": "Animas Chest",
+      "Description": "Wearing this piece will fill you of rage",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Chest"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "AnimasLegs",
+      "Name": "Animas Legs",
+      "Description": "Blood filled boots",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Legs"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "ShivasBoots",
+      "Name": "Shivas Precious Boots",
+      "Description": "At night it glimmers.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Legs"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ShivasCrown",
+      "Name": "Shivas Tundra Crown",
+      "Description": "Crown made of frost",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Helmet"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ShivasDress",
+      "Name": "Shivas Glistening Dress",
+      "Description": "Even mightiest warrior will look good in it",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Chest"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ShivasWeapon",
+      "Name": "Shivas Frosty Weapon",
+      "Description": "Shiva has imbued this weapon with the power of Frost",
+	  "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [ "OneHandedWeapon", "TwoHandedWeapon" ],
+        "ExcludedItemTypes": [ "Staff" ],
+	    "ExcludedSkillTypes": [ "Bows", "Crossbows", "Pickaxes", "Knives" ]
+		}, 
+	  "GuaranteedEffectCount": 6,
+      "GuaranteedMagicEffects": [
+        { "Type": "AddFrostDamage", "Values": { "MinValue": 5, "MaxValue": 10, "Increment": 1 } }
+	  ]
+    }
+	},
+	
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "SusanosCape",
+      "Name": "Susano Mighty Cape",
+      "Description": "Faint sparks can be seen at night.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Shoulder"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "SusanosHelm",
+      "Name": "Susano Mighty Helm",
+      "Description": "Shiniest Helmet",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Helmet"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "SusanosWeapon",
+      "Name": "Susano Mighty Weapon",
+      "Description": "Not for mere mortals.",
+	  "IsSetItem": true, 
+      "EquipFx": "LightningAuraSledge",
+      "EquipFxMode": "EquipRoot", 
+      "Requirements": {
+        "AllowedItemTypes": [ "OneHandedWeapon", "TwoHandedWeapon" ],
+	    "AllowedSkillTypes": [ "Clubs", "Axes", "Polearms" ],
+		"ExcludedItemNames": [ "$item_axe_stone", "$item_axe_flint", "$item_axe_bronze", "$item_axe_iron" ]
+		}, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+    {
+      "ID": "TsukuyomisWeapon",
+      "Name": "Tsukuyomis Trusty Weapon",
+      "Description": "Thin, almost invisible.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [ "OneHandedWeapon" ],
+        "AllowedSkillTypes": [ "Knives", "Swords" ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+      "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "TsukuyomisHelmet",
+      "Name": "Tsukuyomis Devious Helmet",
+      "Description": "Two sharp horns stick out.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemTypes": [
+          "Helmet"
+        ]
+      }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendaryItems",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "TsukuyomisRing",
+      "Name": "Tsukuyomis Lucky Ring",
+      "Description": "Luck out of this world.",
+      "IsSetItem": true, 
+      "Requirements": {
+        "AllowedItemNames" : [
+          "$mod_epicloot_assets_silverring"
+        ]
+	  }, 
+	  "GuaranteedEffectCount": 6
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Pheonix",
+      "Name": "<color=#ffff00>Pheonixs Blessing</color>",
+      "LegendaryIDs": [
+        "PheonixFeathers"
+      ],
+      "SetBonuses": [
+		{ "Count": 1, "Effect": { "Type": "Undying" } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Odin",
+      "Name": "<color=#ffff00>Odins Tanky Wares</color>",
+      "LegendaryIDs": [
+        "OdinsShield",
+        "OdinsWeapon",
+        "OdinsLegs"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyParry", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "Slow", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+		{ "Count": 3, "Effect": { "Type": "Undying" } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Titan",
+      "Name": "<color=#ffff00>Titans Mighty Strength</color>",
+      "LegendaryIDs": [
+        "TitansFists",
+        "TitansBelt",
+        "TitansLeggings"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyStaggerDuration", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "ModifyBlockPower", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+		{ "Count": 3, "Effect": { "Type": "Bulwark" } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Sephiroth",
+      "Name": "<color=#ffff00>Sephiroths Battlegear</color>",
+      "LegendaryIDs": [
+        "SephirothsCape",
+        "SephirothsRing",
+		"SephirothsWeapon"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "LifeSteal", "Values": { "MinValue" : 5, "MaxValue" : 5, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "ReflectDamage", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+		{ "Count": 3, "Effect": { "Type": "Berserker" } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "ExDeath",
+      "Name": "<color=#ffff00>ExDeath's Magical Wears</color>",
+      "LegendaryIDs": [
+        "ExDeathHelm",
+        "ExDeathStaff",
+        "ExDeathCape"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "AddFrostDamage", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "AddFireDamage", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+        { "Count": 3, "Effect": { "Type": "ModifyEitrRegen", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Anima",
+      "Name": "<color=#ffff00>Animas Raging Armor</color>",
+      "LegendaryIDs": [
+        "AnimasBelt",
+        "AnimasChest",
+        "AnimasLegs"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyDamage", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "ModifyDamageLowHealth", "Values": { "MinValue": 25, "MaxValue": 75, "Increment": 1 } } },
+		{ "Count": 3, "Effect": { "Type": "Berserker" } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Shiva",
+      "Name": "<color=#ffff00>Diamond Dust</color>",
+      "LegendaryIDs": [
+        "ShivasWeapon",
+        "ShivasCrown",
+        "ShivasDress",
+        "ShivasBoots"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyAttackStaminaUse", "Values": { "MinValue" : 5, "MaxValue" : 5, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "AvoidDamageTaken", "Values": { "MinValue": 5, "MaxValue": 5, "Increment": 1 } } },
+        { "Count": 3, "Effect": { "Type": "ModifyElementalDamage", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+        { "Count": 4, "Effect": { "Type": "FrostDamageAOE", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Susano",
+      "Name": "<color=#ffff00>Susanos Mighty Battlegear</color>",
+      "LegendaryIDs": [
+        "SusanosWeapon",
+        "SusanosHelm",
+        "SusanosCape"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyAttackSpeed", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "IncreaseStamina", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+        { "Count": 3, "Effect": { "Type": "Luck", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } }
+      ]
+    }
+	},
+	
+	{
+	  "TargetFile": "legendaries.json",
+      "Path": "$.LegendarySets",
+      "Action": "Append",
+      "Value":
+	{
+      "ID": "Tsukuyomi",
+      "Name": "<color=#ffff00>Tsukuyomi's Devious Garbs</color>",
+      "LegendaryIDs": [
+        "TsukuyomisWeapon",
+        "TsukuyomisHelmet",
+        "TsukuyomisRing"
+      ],
+      "SetBonuses": [
+        { "Count": 2, "Effect": { "Type": "ModifyBackstab", "Values": { "MinValue" : 10, "MaxValue" : 10, "Increment" : 1 } } },
+        { "Count": 2, "Effect": { "Type": "Opportunist", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } },
+        { "Count": 3, "Effect": { "Type": "Luck", "Values": { "MinValue": 10, "MaxValue": 10, "Increment": 1 } } }
+      ]
+    }
+	}
+	]
+}
