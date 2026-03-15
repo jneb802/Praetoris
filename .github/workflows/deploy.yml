@@ -80,6 +80,32 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Generate changelog
+        run: python3 scripts/generate-changelog.py --previous-tag --output changelog.md
+
+      - name: Post changelog to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "::warning::DISCORD_WEBHOOK not set, skipping"
+            exit 0
+          fi
+          VERSION=$(jq -r '.version_number' manifest.json)
+          # Discord messages have a 2000 char limit — truncate if needed
+          BODY=$(head -c 1900 changelog.md)
+          if [ ${#BODY} -lt $(wc -c < changelog.md | tr -d ' ') ]; then
+            BODY="${BODY}
+
+*... truncated — see full changelog on GitHub*"
+          fi
+          PAYLOAD=$(jq -n --arg content "**Praetoris v${VERSION} deployed**
+
+${BODY}" '{content: $content}')
+          curl -s -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD" > /dev/null
+
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -91,6 +117,6 @@ jobs:
           else
             gh release create "$TAG" \
               --title "v${VERSION}" \
-              --generate-notes
+              --notes-file changelog.md
             echo "::notice::Created release $TAG"
           fi

@@ -477,13 +477,37 @@ def generate_changelog(base: str) -> str:
 # Main
 # ---------------------------------------------------------------------------
 
+def find_previous_tag() -> str | None:
+    """Find the most recent tag before HEAD."""
+    try:
+        result = subprocess.run(
+            ["git", "describe", "--tags", "--abbrev=0", "HEAD~1"],
+            capture_output=True, text=True, check=True,
+        )
+        return result.stdout.strip()
+    except subprocess.CalledProcessError:
+        return None
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate a changelog from git diff")
     parser.add_argument("--base", default="main", help="Base ref to diff against (default: main)")
+    parser.add_argument("--previous-tag", action="store_true",
+                        help="Auto-detect base as the most recent git tag before HEAD")
     parser.add_argument("--output", help="Write to file instead of stdout")
     args = parser.parse_args()
 
-    changelog = generate_changelog(args.base)
+    if args.previous_tag:
+        base = find_previous_tag()
+        if not base:
+            print("No previous tag found, falling back to main", file=sys.stderr)
+            base = "main"
+        else:
+            print(f"Diffing against previous tag: {base}", file=sys.stderr)
+    else:
+        base = args.base
+
+    changelog = generate_changelog(base)
 
     if args.output:
         with open(args.output, "w") as f:
