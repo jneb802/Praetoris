@@ -8,48 +8,8 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
-    runs-on: self-hosted
-    outputs:
-      version: ${{ steps.version.outputs.version }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Extract version from manifest.json
-        id: version
-        run: |
-          VERSION=$(jq -r '.version_number' manifest.json)
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-          echo "::notice::Deploying Praetoris v$VERSION"
-
-      - name: Stop Valheim server
-        run: |
-          echo "Stopping Valheim server..."
-          sudo systemctl stop valheim
-
-      - name: Install mods via tcli
-        run: |
-          chmod +x scripts/install-mods.sh
-          ./scripts/install-mods.sh manifest.json
-
-      - name: Sync configs to server
-        run: |
-          BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
-          echo "Syncing configs to $BEPINEX_CONFIG..."
-          rsync -rv --delete Config/ "$BEPINEX_CONFIG/"
-          echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
-
-      - name: Start Valheim server
-        run: |
-          echo "Starting Valheim server..."
-          sudo systemctl start valheim
-          echo "Waiting 30s for server to initialize..."
-          sleep 30
-          sudo systemctl status valheim --no-pager || echo "::warning::Server may not have started correctly"
-
   publish:
     runs-on: self-hosted
-    needs: deploy
     steps:
       - uses: actions/checkout@v4
 
@@ -67,13 +27,84 @@ jobs:
           echo "Publishing Praetoris v${VERSION} to Thunderstore..."
           tcli publish --file "Praetoris-${VERSION}.zip"
 
-  release:
+  announce:
     runs-on: self-hosted
     needs: publish
     steps:
       - uses: actions/checkout@v4
+
+      - name: Announce restart countdown
+        env:
+          RCON_PASSWORD: ${{ secrets.RCON_PASSWORD }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          chmod +x scripts/announce-restart.sh
+          ./scripts/announce-restart.sh
+
+  deploy:
+    runs-on: self-hosted
+    needs: announce
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stop Valheim server
+        run: |
+          echo "Stopping Valheim server..."
+          sudo systemctl stop valheim
+
+      - name: Install mods via tcli
+        run: |
+          chmod +x scripts/install-mods.sh
+          ./scripts/install-mods.sh manifest.json server-mods.json
+
+      - name: Sync configs to server
+        run: |
+          BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
+          echo "Syncing configs to $BEPINEX_CONFIG..."
+          rsync -rv --delete --exclude 'RustyMods.DiscordBot.cfg' Config/ "$BEPINEX_CONFIG/"
+          echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
+
+      - name: Start Valheim server
+        run: |
+          echo "Starting Valheim server..."
+          sudo systemctl start valheim
+          echo "Waiting 30s for server to initialize..."
+          sleep 30
+          sudo systemctl status valheim --no-pager || echo "::warning::Server may not have started correctly"
+
+  release:
+    runs-on: self-hosted
+    needs: deploy
+    steps:
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Generate changelog
+        run: python3 scripts/generate-changelog.py --previous-tag --output changelog.md
+
+      - name: Post changelog to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "::warning::DISCORD_WEBHOOK not set, skipping"
+            exit 0
+          fi
+          VERSION=$(jq -r '.version_number' manifest.json)
+          # Discord messages have a 2000 char limit — truncate if needed
+          BODY=$(head -c 1900 changelog.md)
+          if [ ${#BODY} -lt $(wc -c < changelog.md | tr -d ' ') ]; then
+            BODY="${BODY}
+
+*... truncated — see full changelog on GitHub*"
+          fi
+          PAYLOAD=$(jq -n --arg content "**Praetoris v${VERSION} deployed**
+
+${BODY}" '{content: $content}')
+          curl -s -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD" > /dev/null
 
       - name: Create GitHub release
         env:
@@ -86,6 +117,6 @@ jobs:
           else
             gh release create "$TAG" \
               --title "v${VERSION}" \
-              --generate-notes
+              --notes-file changelog.md
             echo "::notice::Created release $TAG"
           fi
