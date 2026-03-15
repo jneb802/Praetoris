@@ -55,7 +55,7 @@ jobs:
       - name: Install mods
         run: |
           chmod +x scripts/install-mods.sh
-          ./scripts/install-mods.sh manifest.json server-mods.json
+          ./scripts/install-mods.sh manifest.json server-mods.json greylist.json
 
       - name: Sync configs to server
         run: |
