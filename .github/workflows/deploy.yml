@@ -92,19 +92,17 @@ jobs:
             exit 0
           fi
           VERSION=$(jq -r '.version_number' manifest.json)
-          # Discord messages have a 2000 char limit — truncate if needed
+          HEADER="**Praetoris v${VERSION} deployed**"
           BODY=$(head -c 1900 changelog.md)
-          if [ ${#BODY} -lt $(wc -c < changelog.md | tr -d ' ') ]; then
-            BODY="${BODY}
-
-*... truncated — see full changelog on GitHub*"
+          FULL_SIZE=$(wc -c < changelog.md | tr -d ' ')
+          BODY_SIZE=${#BODY}
+          if [ "$BODY_SIZE" -lt "$FULL_SIZE" ]; then
+            BODY="${BODY}..."
           fi
-          PAYLOAD=$(jq -n --arg content "**Praetoris v${VERSION} deployed**
-
-${BODY}" '{content: $content}')
-          curl -s -X POST "$DISCORD_WEBHOOK" \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" > /dev/null
+          jq -n --arg h "$HEADER" --arg b "$BODY" '{content: ($h + "\n\n" + $b)}' \
+            | curl -s -X POST "$DISCORD_WEBHOOK" \
+              -H "Content-Type: application/json" \
+              -d @- > /dev/null
 
       - name: Create GitHub release
         env:
