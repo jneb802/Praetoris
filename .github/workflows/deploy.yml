@@ -50,28 +50,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Extract version
-        id: version
-        run: |
-          VERSION=$(jq -r '.version_number' manifest.json)
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-
-      - name: Build Thunderstore package
-        run: |
-          VERSION="${{ steps.version.outputs.version }}"
-          zip -r "Praetoris-${VERSION}.zip" \
-            manifest.json icon.png README.md CHANGELOG.md Config/
-          echo "::notice::Built Praetoris-${VERSION}.zip ($(du -h Praetoris-${VERSION}.zip | cut -f1))"
-
       - name: Publish to Thunderstore
         env:
           TCLI_AUTH_TOKEN: ${{ secrets.THUNDERSTORE_TOKEN }}
         run: |
-          VERSION="${{ steps.version.outputs.version }}"
+          VERSION=$(jq -r '.version_number' manifest.json)
           echo "Publishing Praetoris v${VERSION} to Thunderstore..."
-          tcli publish \
-            --file "Praetoris-${VERSION}.zip" \
-            --repository https://thunderstore.io
+          tcli publish --package-version "${VERSION}"
 
   tag:
     runs-on: self-hosted

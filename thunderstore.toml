@@ -1,0 +1,22 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "warpalicious"
+name = "Praetoris"
+versionNumber = "1.0.0"
+description = "Hardcore exploration modpack for the Praetoris server"
+websiteUrl = "https://discord.gg/R9rb5REgD3"
+containsNsfwContent = false
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["valheim"]
+
+[publish.categories]
+valheim = ["modpacks"]
