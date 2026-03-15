@@ -1,0 +1,31 @@
+name: PR Changelog
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  changelog:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate changelog
+        run: python3 scripts/generate-changelog.py --base origin/main --output changelog.md
+
+      - name: Post or update PR comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr comment ${{ github.event.pull_request.number }} --edit-last --body-file changelog.md 2>/dev/null; then
+            echo "Updated existing changelog comment"
+          else
+            gh pr comment ${{ github.event.pull_request.number }} --body-file changelog.md
+          fi

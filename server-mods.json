@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "RustyMods-DiscordBot-1.3.0",
+    "ValheimModding-JsonDotNET-13.0.4"
+  ]
+}
