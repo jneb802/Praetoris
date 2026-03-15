@@ -1,0 +1,211 @@
+#################################################
+# Deathlink - Death Choice Configuration
+#################################################
+
+Vanilla:
+  displayName: Vanilla
+  deathStyle:
+    foodLossOnDeath: true
+    foodLossUsesDeathlink: true
+    skillLossOnDeath: true
+    maxSkillLossPercentage: 0.05
+    minSkillLossPercentage: 0.05
+    itemSavedStyle: Tombstone
+    nonSkillCheckedItemAction: Tombstone
+  deathSkillRate: 1
+  resourceModifiers: {}
+  skillModifiers: {}
+  deathLootModifiers: {}
+Rougelike1:
+  displayName: ShieldBearer
+  deathStyle:
+    foodLossOnDeath: true
+    foodLossUsesDeathlink: true
+    minItemsKept: 3
+    maxItemsKept: 15
+    minEquipmentKept: 3
+    maxEquipmentKept: 9
+    skillLossOnDeath: true
+    maxSkillLossPercentage: 0.13
+    minSkillLossPercentage: 0.03
+    itemLossStyle: DeathlinkBased
+    itemSavedStyle: Tombstone
+    nonSkillCheckedItemAction: Tombstone
+  deathSkillRate: 1
+  resourceModifiers:
+    Wood:
+      skillInfluence: true
+      prefabs:
+      - Wood
+      - FineWood
+      - RoundLog
+      - YggdrasilWood
+      - Blackwood
+      bonusModifer: 1.1
+      bonusActions:
+      - Harvesting
+  skillModifiers:
+    All:
+      skillInfluence: true
+      skill: All
+      bonusModifer: 1.05
+  deathLootModifiers: {}
+Rougelike2:
+  displayName: Raider
+  deathStyle:
+    foodLossOnDeath: true
+    foodLossUsesDeathlink: true
+    minEquipmentKept: 2
+    maxEquipmentKept: 6
+    skillLossOnDeath: true
+    maxSkillLossPercentage: 0.14
+    minSkillLossPercentage: 0.02
+    itemLossStyle: DeathlinkBased
+    itemSavedStyle: Tombstone
+    nonSkillCheckedItemAction: Tombstone
+  deathSkillRate: 1
+  resourceModifiers:
+    Wood:
+      skillInfluence: true
+      prefabs:
+      - Wood
+      - FineWood
+      - RoundLog
+      - YggdrasilWood
+      - Blackwood
+      bonusModifer: 1.2
+      bonusActions:
+      - Harvesting
+    Ore:
+      skillInfluence: true
+      prefabs:
+      - CopperOre
+      - TinOre
+      - IronScrap
+      - SilverOre
+      - BlackMetalScrap
+      - CopperScrap
+      - FlametalOreNew
+      bonusModifer: 1.2
+      bonusActions:
+      - Harvesting
+  skillModifiers:
+    All:
+      skillInfluence: true
+      skill: All
+      bonusModifer: 1.1
+  deathLootModifiers: {}
+Rougelike3:
+  displayName: Berserker
+  deathStyle:
+    foodLossOnDeath: true
+    foodLossUsesDeathlink: true
+    maxEquipmentKept: 3
+    skillLossOnDeath: true
+    maxSkillLossPercentage: 0.2
+    minSkillLossPercentage: 0.05
+    itemLossStyle: DeathlinkBased
+    nonSkillCheckedItemAction: Tombstone
+  deathSkillRate: 1
+  resourceModifiers:
+    Wood:
+      skillInfluence: true
+      prefabs:
+      - Wood
+      - FineWood
+      - RoundLog
+      - YggdrasilWood
+      - Blackwood
+      bonusModifer: 1.5
+      bonusActions:
+      - Harvesting
+    Ore:
+      skillInfluence: true
+      prefabs:
+      - CopperOre
+      - TinOre
+      - IronScrap
+      - SilverOre
+      - BlackMetalScrap
+      - CopperScrap
+      - FlametalOreNew
+      bonusModifer: 1.5
+      bonusActions:
+      - Harvesting
+  skillModifiers:
+    All:
+      skillInfluence: true
+      skill: All
+      bonusModifer: 1.2
+  deathLootModifiers:
+    AmberPearl:
+      prefab: AmberPearl
+      chance: 0.05
+      amount: 1
+      bonusActions:
+      - Kills
+Hardcore:
+  displayName: Deathbringer
+  deathStyle:
+    foodLossOnDeath: true
+    foodLossUsesDeathlink: true
+    skillLossOnDeath: true
+    maxSkillLossPercentage: 0.25
+    minSkillLossPercentage: 0.05
+    itemLossStyle: DestroyAll
+    nonSkillCheckedItemAction: Tombstone
+  deathSkillRate: 1
+  resourceModifiers:
+    Wood:
+      skillInfluence: true
+      prefabs:
+      - Wood
+      - FineWood
+      - RoundLog
+      - YggdrasilWood
+      - Blackwood
+      bonusModifer: 2
+      bonusActions:
+      - Harvesting
+    Stone:
+      skillInfluence: true
+      prefabs:
+      - Flint
+      - Stone
+      - BlackMarble
+      - Grausten
+      bonusModifer: 2
+      bonusActions:
+      - Harvesting
+    Ore:
+      skillInfluence: true
+      prefabs:
+      - CopperOre
+      - TinOre
+      - IronScrap
+      - SilverOre
+      - BlackMetalScrap
+      - CopperScrap
+      - FlametalOreNew
+      bonusModifer: 2
+      bonusActions:
+      - Harvesting
+  skillModifiers:
+    All:
+      skillInfluence: true
+      skill: All
+      bonusModifer: 1.3
+  deathLootModifiers:
+    AmberPearl:
+      prefab: AmberPearl
+      chance: 0.05
+      amount: 1
+      bonusActions:
+      - Kills
+    SmallHealthPotion:
+      prefab: MeadHealthMinor
+      chance: 0.01
+      amount: 1
+      bonusActions:
+      - Kills
+

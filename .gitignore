@@ -2,3 +2,13 @@
 CLAUDE.md
 *.zip
 .DS_Store
+dev/
+.env.dev
+
+# Config/ — local/personal files that shouldn't be deployed
+Config/BepInEx.cfg
+Config/Azumatt.AzuAntiCheat_Webhook.yml
+Config/com.maxsch.valheim.vnei.blacklist.txt
+Config/Hunter_Legacy.*.yml
+Config/Magic_Supremacy.*.yml
+Config/**/localizations/

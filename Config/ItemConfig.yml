@@ -26,100 +26,41 @@
 #      - InternalID
 
 # Examples:
-# groups:
-#   Huge Wood Gain:
-#     - Wood
-#     - Fine Wood
-#     - Core Wood
-#     - Ancient Bark
+groups:
+  Huge Wood Gain:
+    - Wood
+    - Fine Wood
+    - Core Wood
+    - Ancient Bark
 
+# This will increase the default stack size for all items in this group by 50% (multiplied by 1.5).
+Huge Wood Stacks:
+  stack factor: 1.5
+
+# This will increase wood gained by 10%, until you reach the first world level.
 wood:
-  amount: 1.5
-
-RoundLog:
-  amount: 1.5
-
-Stone:
-  amount: 1.5
-
-BirchSeeds:
-  amount: 1.5
-
-FirCone:
-  amount: 1.5
-
-BeechSeeds:
-  amount: 1.5
-
-PineCone:
-  amount: 1.5
-
-crop:
   amount:
-    0: 1
-    1: 1.25
-    4: 1
-
-CryptKey:
-  stack: 20
-
-Wishbone:
-  stack: 20
-
-DragonsHeart_Ygg:
-  stack: 20
-
-CopperOre:
-  amount:
-    0: 1
-    1: 1
-    2: 2
-    3: 2
-    4: 2
-    5: 2
-    6: 2
-    7: 2
-
-TinOre:
-  amount:
-    0: 1
-    1: 1
-    2: 2
-    3: 2
-    4: 2
-    5: 2
-    6: 2
-    7: 2
-
-IronScrap:
-  amount:
-    0: 1
-    1: 1
-    2: 1
-    3: 2
-    4: 2
-    5: 2
-    6: 2
-    7: 2
-
-SilverOre:
-  amount:
-    0: 1
-    1: 1
-    2: 1
-    3: 1
-    4: 2
-    5: 2
-    6: 2
-    7: 2
-
-BlackMetalScrap:
-  amount:
-    0: 1
-    1: 1
-    2: 1
-    3: 1
-    4: 2
-    5: 2
-    6: 2
-    7: 2
+    0: 1.1
+    1: default
+    
+# This will make dragon eggs teleportable.
+dragon egg:
+  teleportable: yes
+  
+# This will make silver ore lighter and increase the stack size.
+silver ore:
+  weight: 10
+  stack: 50
+  
+# This will make you keep your food in the inventory, if you happen to die.
+food:
+  loss: no
+  
+# This will stop your character from picking up Ooze automatically.
+ooze:
+  pickup: no
+  
+# This will make metal float in water and teleportable.
+metal:
+  floating: yes
+  teleportable: yes
