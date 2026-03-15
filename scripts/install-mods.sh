@@ -43,5 +43,18 @@ if [ "$FAILED" -gt 0 ]; then
   exit 1
 fi
 
+# Copy mods from tcli profile into the server's BepInEx plugins directory
+TCLI_PROFILE="$HOME/.config/ThunderstoreCLI/Profiles/valheim/DefaultProfile/BepInEx/plugins"
+BEPINEX_PLUGINS="/home/valheim/server/BepInEx/plugins"
+
+if [ -d "$TCLI_PROFILE" ]; then
+  echo ""
+  echo "Syncing mods from tcli profile to $BEPINEX_PLUGINS..."
+  rsync -rv "$TCLI_PROFILE/" "$BEPINEX_PLUGINS/"
+  echo "Synced $(find "$TCLI_PROFILE" -name '*.dll' | wc -l | tr -d ' ') mod DLLs"
+else
+  echo "WARNING: tcli profile not found at $TCLI_PROFILE"
+fi
+
 echo ""
 echo "All $TOTAL dependencies installed successfully"
