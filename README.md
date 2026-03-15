@@ -1,6 +1,6 @@
 # Praetoris
 
-Hardcore exploration modpack for the Praetoris Valheim dedicated server.
+Hardcore exploration modpack for the Praetoris Valheim dedicated server — Season 5.
 
 **Thunderstore:** https://thunderstore.io/c/valheim/p/warpalicious/Praetoris/
 **Discord:** https://discord.gg/R9rb5REgD3
@@ -21,15 +21,15 @@ Config/         # BepInEx config files shipped to players
 
 ## Versioning
 
-Format: `<season>.<major>.<patch>` — e.g. `1.1.15` = season 1, major 1, patch 15. `2.0.0` = season 2 launch.
+Format: `<season>.<major>.<patch>` — e.g. `5.0.0` = season 5 launch. `5.1.0` = first major update of season 5.
 
-`main` always reflects what is live on the server. All changes go through work branches and PRs. Each release is tagged (e.g. `v1.1.15`).
+`main` always reflects what is live on the server. All changes go through work branches and PRs. Each release is tagged (e.g. `v5.0.0`).
 
 ```
 git tag                              # list all releases
-git tag -l "v1.*"                    # all season 1 releases
-git diff v1.1.15..v2.0.0            # see what changed between versions
-git log v1.0.0..v1.1.15 --oneline   # every change across season 1
+git tag -l "v5.*"                    # all season 5 releases
+git diff v1.1.15..v5.0.0            # see what changed between seasons
+git log v5.0.0..v5.1.0 --oneline    # changes within season 5
 ```
 
 ## Publishing
