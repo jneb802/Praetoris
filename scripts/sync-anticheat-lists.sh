@@ -11,9 +11,9 @@ PLUGINS_DIR="/home/valheim/server/BepInEx/plugins"
 WHITELIST_DIR="/home/valheim/server/BepInEx/config/AzuAntiCheat_Whitelist"
 GREYLIST_DIR="/home/valheim/server/BepInEx/config/AzuAntiCheat_Greylist"
 
-# Clear existing lists
-rm -f "$WHITELIST_DIR"/*.dll
-rm -f "$GREYLIST_DIR"/*.dll
+# Note: we don't clear existing lists — manually-added DLLs
+# (e.g. local mods like ValTicket) would be wiped. Instead we
+# just copy/overwrite managed DLLs into the folders.
 
 # --- Whitelist: copy DLLs for all mods in manifest.json ---
 MANIFEST="${1:-manifest.json}"
