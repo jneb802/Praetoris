@@ -9,68 +9,68 @@
 #    required_boss: "None"               |- This must be one of the following values: "None" "Eikythr" "TheElder" "BoneMass" "Moder" "Yagluth" "TheQueen"
 rewards:
   Coin:
-    resouceCost: 5
-    requiredBoss: None
-    resourcePrefab: Coins
+    resource_cost: 5
+    required_boss: None
+    resource_prefab: Coins
     enabled: true
   Wood:
-    resouceCost: 12
-    requiredBoss: Eikythr
-    resourcePrefab: Wood
+    resource_cost: 12
+    required_boss: Eikythr
+    resource_prefab: Wood
     enabled: true
   CoreWood:
-    resouceCost: 20
-    requiredBoss: BoneMass
-    resourcePrefab: RoundLog
+    resource_cost: 20
+    required_boss: BoneMass
+    resource_prefab: RoundLog
     enabled: true
   FineWood:
-    resouceCost: 26
-    requiredBoss: Moder
-    resourcePrefab: FineWood
+    resource_cost: 26
+    required_boss: Moder
+    resource_prefab: FineWood
     enabled: true
   Copper:
-    resouceCost: 45
-    requiredBoss: TheElder
-    resourcePrefab: CopperOre
+    resource_cost: 45
+    required_boss: TheElder
+    resource_prefab: CopperOre
     enabled: true
   Tin:
-    resouceCost: 40
-    requiredBoss: TheElder
-    resourcePrefab: TinOre
+    resource_cost: 40
+    required_boss: TheElder
+    resource_prefab: TinOre
     enabled: true
   Iron:
-    resouceCost: 60
-    requiredBoss: BoneMass
-    resourcePrefab: IronScrap
+    resource_cost: 60
+    required_boss: BoneMass
+    resource_prefab: IronScrap
     enabled: true
   Silver:
-    resouceCost: 70
-    requiredBoss: Moder
-    resourcePrefab: SilverOre
+    resource_cost: 70
+    required_boss: Moder
+    resource_prefab: SilverOre
     enabled: true
   Blackmetal:
-    resouceCost: 80
-    requiredBoss: Yagluth
-    resourcePrefab: BlackMetalScrap
+    resource_cost: 80
+    required_boss: Yagluth
+    resource_prefab: BlackMetalScrap
     enabled: true
   Tar:
-    resouceCost: 60
-    requiredBoss: Yagluth
-    resourcePrefab: Tar
+    resource_cost: 60
+    required_boss: Yagluth
+    resource_prefab: Tar
     enabled: true
   Guck:
-    resouceCost: 40
-    requiredBoss: BoneMass
-    resourcePrefab: Guck
+    resource_cost: 40
+    required_boss: BoneMass
+    resource_prefab: Guck
     enabled: false
   Sap:
-    resouceCost: 100
-    requiredBoss: TheQueen
-    resourcePrefab: Sap
+    resource_cost: 100
+    required_boss: TheQueen
+    resource_prefab: Sap
     enabled: true
   SoftTissue:
-    resouceCost: 140
-    requiredBoss: TheQueen
-    resourcePrefab: Softtissue
+    resource_cost: 140
+    required_boss: TheQueen
+    resource_prefab: Softtissue
     enabled: true
 
