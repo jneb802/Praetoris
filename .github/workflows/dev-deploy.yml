@@ -33,7 +33,7 @@ jobs:
         run: |
           BEPINEX_CONFIG="/home/valheim/server/BepInEx/config"
           echo "Syncing configs to $BEPINEX_CONFIG..."
-          rsync -rv --delete --exclude 'RustyMods.DiscordBot.cfg' --exclude 'DiscordBot/' --exclude 'AzuAntiCheat_Whitelist/' --exclude 'AzuAntiCheat_Greylist/' --exclude 'org.tristan.rcon.cfg' --exclude 'Azumatt.AzuAntiCheat_ModeratorList.yml' Config/ "$BEPINEX_CONFIG/"
+          rsync -rv Config/ "$BEPINEX_CONFIG/"
           echo "Synced $(find Config/ -type f 2>/dev/null | wc -l) config files"
 
       - name: Sync AzuAntiCheat whitelist and greylist
