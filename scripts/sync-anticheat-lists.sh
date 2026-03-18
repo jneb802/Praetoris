@@ -70,6 +70,11 @@ else
   echo "No greylist.json found, skipping greylist"
 fi
 
+# Fix ownership so the valheim user can read the DLLs at runtime.
+# The github-runner user copies them, but AzuAntiCheat runs as valheim.
+chown -R valheim:valheim "$WHITELIST_DIR" "$GREYLIST_DIR" 2>/dev/null || true
+chmod -R 775 "$WHITELIST_DIR" "$GREYLIST_DIR" 2>/dev/null || true
+
 echo ""
 echo "Whitelist: $(ls "$WHITELIST_DIR"/*.dll 2>/dev/null | wc -l | tr -d ' ') DLLs"
 echo "Greylist:  $(ls "$GREYLIST_DIR"/*.dll 2>/dev/null | wc -l | tr -d ' ') DLLs"
